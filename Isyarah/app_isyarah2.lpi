@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Aplikasi Isyarah [ Pembelajaran Al-Quran Digital ]"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="lazreport"/>
+      </Item>
+      <Item>
+        <PackageName Value="rxdbgrid_export_spreadsheet"/>
+      </Item>
+      <Item>
+        <PackageName Value="lazMapViewerPkg"/>
+      </Item>
+      <Item>
+        <PackageName Value="industrial"/>
+      </Item>
+      <Item>
+        <PackageName Value="laz_visualplanit"/>
+      </Item>
+      <Item>
+        <PackageName Value="mbColorLibLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="laz_acs_lib"/>
+      </Item>
+      <Item>
+        <PackageName Value="Cody"/>
+      </Item>
+      <Item>
+        <PackageName Value="lazbarcodes"/>
+      </Item>
+      <Item>
+        <PackageName Value="eccontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="weblaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="pkg_gifanim"/>
+      </Item>
+      <Item>
+        <PackageName Value="gifviewer_pkg"/>
+      </Item>
+      <Item>
+        <PackageName Value="laz_synapse"/>
+      </Item>
+      <Item>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item>
+      <Item>
+        <PackageName Value="LazControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="GLScene_RunTime"/>
+      </Item>
+      <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="atflatcontrols_package"/>
+      </Item>
+      <Item>
+        <PackageName Value="BGRAControlsFX"/>
+      </Item>
+      <Item>
+        <PackageName Value="ATShapeLine_package"/>
+      </Item>
+      <Item>
+        <PackageName Value="indylaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="P4DLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="WebView4Delphi"/>
+      </Item>
+      <Item>
+        <PackageName Value="CEF4Delphi_Lazarus"/>
+      </Item>
+      <Item>
+        <PackageName Value="RunTimeTypeInfoControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="KControlsLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="FrameViewer09"/>
+      </Item>
+      <Item>
+        <PackageName Value="PasLibVlcPlayer"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="JvPageCompsR"/>
+      </Item>
+      <Item>
+        <PackageName Value="rxnew"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_Cindy"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_ExControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="app_isyarah2.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_qori.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Qori"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubrowser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBrowser"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_regtajwid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRegTajwid"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_showhuruf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_ShowHuruf"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_ayatbyai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_AyatByAI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_message.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Pesan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_player.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Player"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_keyboard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Keyboard"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_hadist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Hadist"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_ask.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Ask"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="u_zsplash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FZSplash"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_edtrans.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEditTrans"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_progres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProgress"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_treekata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTreeKata"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_agreement.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAgreement"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_wait.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_statistika.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmStatistika"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_setting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSetting"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_chatai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_ChatAI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uregistration.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fregistration"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_showkata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmShowKata"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_record.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_RecordAudio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_tafsir2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTafsir2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_quiz.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmQuiz"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_quotemaker.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmQuoteMaker"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ujamu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmJamu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_source.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDBSource"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uSimpleBrowser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSimpleBrowser"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="usimplebrowser"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_translate_tafsir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTranslate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_restranslate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmResTranslate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ui_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_Main"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\app_isyarah"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
