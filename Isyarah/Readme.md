@@ -12,4 +12,5 @@ Download
 1. Versi Lite
 2. Versi Full
 
-![image](https://github.com/user-attachments/assets/0fe0d448-4458-4c40-85cf-d0526101a0b4)
+![image](https://github.com/user-attachments/assets/ac6eff54-1be9-4bc9-acd9-5fa67548e9a2)
+
