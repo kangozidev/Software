@@ -1,0 +1,43 @@
+object frmTreeKata: TfrmTreeKata
+  Left = 356
+  Height = 674
+  Top = 250
+  Width = 347
+  AlphaBlendValue = 230
+  Caption = 'Struktur dan Sebaran Kata'
+  ClientHeight = 674
+  ClientWidth = 347
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object treeData: TTreeView
+    Cursor = crHandPoint
+    Left = 2
+    Height = 670
+    Top = 2
+    Width = 343
+    Align = alClient
+    BorderSpacing.Around = 2
+    BackgroundColor = 15989492
+    BorderStyle = bsNone
+    Color = 15989492
+    ExpandSignType = tvestPlusMinus
+    Font.CharSet = ARABIC_CHARSET
+    Font.Height = -20
+    Font.Name = 'LPMQ Isep Misbah'
+    Font.Quality = fqCleartypeNatural
+    ParentFont = False
+    ReadOnly = True
+    RowSelect = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+    OnDblClick = treeDataDblClick
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoRowSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object DTGetItem: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 281
+    Top = 66
+  end
+end

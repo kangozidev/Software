@@ -1,0 +1,34 @@
+object frm_AyatByAI: Tfrm_AyatByAI
+  Left = 356
+  Height = 784
+  Top = 250
+  Width = 1372
+  AlphaBlendValue = 245
+  BorderStyle = bsDialog
+  Caption = 'Tafsir Tahlili'
+  ClientHeight = 784
+  ClientWidth = 1372
+  Color = clWhite
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poDesktopCenter
+  object mmResponAI: TMemo
+    Left = 12
+    Height = 760
+    Top = 12
+    Width = 1348
+    Align = alClient
+    BorderSpacing.Around = 12
+    BorderStyle = bsNone
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Bahnschrift Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+end

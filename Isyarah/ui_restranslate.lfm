@@ -1,0 +1,47 @@
+object frmResTranslate: TfrmResTranslate
+  Left = 437
+  Height = 516
+  Top = 250
+  Width = 845
+  AlphaBlendValue = 240
+  BorderIcons = [biSystemMenu]
+  Caption = 'Terjemahan'
+  ClientHeight = 516
+  ClientWidth = 845
+  Color = 15461868
+  DesignTimePPI = 120
+  FormStyle = fsSystemStayOnTop
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Panel1: TPanel
+    Left = 0
+    Height = 516
+    Top = 0
+    Width = 845
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 516
+    ClientWidth = 845
+    Color = 15461868
+    ParentColor = False
+    TabOrder = 0
+    OnClick = Panel1Click
+    object Memo1: TMemo
+      Left = 20
+      Height = 476
+      Top = 20
+      Width = 805
+      Align = alClient
+      BorderSpacing.Around = 20
+      BorderStyle = bsNone
+      Color = 15461868
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Poppins'
+      Font.Quality = fqCleartypeNatural
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+end

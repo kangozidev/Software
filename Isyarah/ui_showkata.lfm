@@ -1,0 +1,45 @@
+object frmShowKata: TfrmShowKata
+  Left = 361
+  Height = 342
+  Top = 250
+  Width = 575
+  AlphaBlendValue = 234
+  BorderStyle = bsDialog
+  Caption = 'Kata'
+  ClientHeight = 342
+  ClientWidth = 575
+  Color = 14612474
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object lbKata: TLabel
+    Left = 0
+    Height = 284
+    Top = 0
+    Width = 575
+    Align = alClient
+    Alignment = taCenter
+    AutoSize = False
+    Font.Height = -93
+    Font.Name = 'LPMQ Isep Misbah'
+    Font.Quality = fqCleartypeNatural
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbTerjemah: TLabel
+    Left = 0
+    Height = 46
+    Top = 284
+    Width = 575
+    Align = alBottom
+    Alignment = taCenter
+    BorderSpacing.Bottom = 12
+    Caption = 'oooo'
+    Font.Height = -38
+    Font.Name = 'Bahnschrift'
+    Font.Quality = fqCleartypeNatural
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+end

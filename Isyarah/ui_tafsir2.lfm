@@ -1,0 +1,866 @@
+object frmTafsir2: TfrmTafsir2
+  Left = 437
+  Height = 781
+  Top = 250
+  Width = 1495
+  Caption = 'Koleksi Kitab Tafsir'
+  ClientHeight = 781
+  ClientWidth = 1495
+  DesignTimePPI = 120
+  Font.Name = 'Bahnschrift'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object pnl_Main: TPanel
+    Left = 405
+    Height = 781
+    Top = 0
+    Width = 1090
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 781
+    ClientWidth = 1090
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 0
+      Height = 38
+      Top = 743
+      Width = 1090
+      Align = alBottom
+      BevelOuter = bvNone
+      ClientHeight = 38
+      ClientWidth = 1090
+      TabOrder = 0
+      object lbRec: TLabel
+        Left = 86
+        Height = 32
+        Top = 4
+        Width = 65
+        Align = alLeft
+        Alignment = taCenter
+        AutoSize = False
+        BorderSpacing.Top = 2
+        BorderSpacing.Around = 2
+        Caption = '1'
+        Color = clInfoBk
+        Font.Height = -20
+        Font.Name = 'HvDTrial Pluto Sans Regular'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+      end
+      object lbTotal: TLabel
+        Left = 549
+        Height = 32
+        Top = 4
+        Width = 78
+        Align = alRight
+        Alignment = taCenter
+        AutoSize = False
+        BorderSpacing.Top = 2
+        BorderSpacing.Around = 2
+        Caption = '1'
+        Color = clInfoBk
+        Font.Height = -20
+        Font.Name = 'HvDTrial Pluto Sans Regular'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+      end
+      object pbar: TProgressBar
+        Left = 906
+        Height = 28
+        Top = 5
+        Width = 179
+        Align = alRight
+        BorderSpacing.Around = 5
+        TabOrder = 0
+      end
+      object DBEdit1: TDBEdit
+        Left = 629
+        Height = 38
+        Top = 0
+        Width = 2
+        DataField = 'id'
+        DataSource = DSPage
+        Align = alRight
+        MaxLength = 0
+        TabOrder = 1
+        Visible = False
+      end
+      object spb_Translate: TSpeedButton
+        Left = 633
+        Height = 34
+        Hint = 'Translate'
+        Top = 2
+        Width = 268
+        Align = alRight
+        BorderSpacing.Around = 2
+        Caption = 'Terjemahkan Halaman Ini'
+        Flat = True
+        Glyph.Data = {
+          36090000424D3609000000000000360000002800000018000000180000000100
+          2000000000000009000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000221E281DED273526F8273526F8273526F8273526F8273526F82735
+          26F8273526F8273526F8273526F8273526F8253224F6243224AA000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00001E2A2091789C6DFFA4D797FFA2DDA3FFA2DEA5FFA2DEA5FFA2DEA5FFA2DE
+          A5FFA2DEA5FFA2DEA5FFA2DEA5FFA2DEA5FFA2DEA5FF233124EC000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000212E219B7FA674FFA1E1ABFF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5
+          B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000000000
+          000000000000000000000000000000000000000000000000004B000000990000
+          0009212E219B7FA674FF9FE5B3FF9FE5B3FF405C48FF96D8A8FF9FE5B3FF9FE5
+          B3FF9FE5B3FF54785EFF82BC93FF9FE5B3FF9FE5B3FF233127E4000000000000
+          000000000000000000000000000000000053000000B1000000BB000000F10000
+          008E212E219B7FA674FF9FE5B3FF9FE5B3FF679474FF46654FFF6A9977FF6A99
+          77FF6A9977FF293B2EFF9EE4B2FF9FE5B3FF9FE5B3FF233127E4000000000000
+          000000000000000000000000005300000096000000050000004B000000920000
+          0007212E219B7FA674FF9FE5B3FF9FE5B3FF99DDADFF18221BFF5F896BFF5F89
+          6BFF405C48FF50735AFF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000000000
+          00000000000000000000000000B1000000050000000000000000000000000000
+          0000212E219B7FA674FF9FE5B3FF9FE5B3FF9FE5B3FF415D49FF85BF96FF9FE5
+          B3FF3B5543FF8AC69BFF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000000000
+          00000000000000000000000000B3000000000000000000000000000000000000
+          0000212E219B7FA674FF9FE5B3FF9FE5B3FF9FE5B3FF7DB58DFF496952FF98DA
+          ABFF314637FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000000000
+          00000000000000000000000000B3000000000000000000000000000000000000
+          0000212E219B7FA674FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF2B3E30FF5E88
+          6AFF659172FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000000000
+          000000000000000000000000006F000000000000000000000000000000000000
+          0000212E219B7FA674FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF587F63FF131B
+          15FF98DBABFF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4000000221A1B
+          1D821A2022891A2022891A2022891A2022891A2022891A2022891A2022893038
+          3A652F3C32A97FA674FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF96D8A8FF70A2
+          7EFF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4222729E798AE
+          B6FFA4BCC4FFA4BCC4FFA4BCC4FFA4BCC4FFA4BCC4FFA4BCC4FFA4BCC4FFB5CF
+          D8FF647974FF7FA674FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5
+          B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF9FE5B3FF233127E4394143F5CEEB
+          F6FFD8F3F8FFDBF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5
+          FAFF8D9FA0FF465C41FF7FB78FFF7FB78FFF7FB78FFF7FB78FFF7FB78FFF7FB7
+          8FFF98DAABFF89C59AFF7FB78FFF7FB78FFF76AA85FF151D17DD394143F5D4F0
+          F7FFDCF5FAFFDCF5FAFF99AAAEFFD7EFF4FFDCF5FAFFDCF5FAFFADC1C5FFC1D7
+          DCFFDBF4F9FF8D9FA0FF718281FF28342F991420188914201889142018891420
+          1889496D553F202D22711420188914201889121B168200000022394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFF99AAAEFF3C4244FFC4DADFFF768486FF50595BFFD0E8
+          ECFFDCF5FAFFDCF5FAFFC0D5DAFF303838650000000000000000000000000000
+          0000000000000000006F00000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFFDCF5FAFFBED3D8FF1C2020FF677275FFDCF5FAFFDCF5
+          FAFFDCF5FAFFDCF5FAFFABBEC2FF1A1F1F8C0000000000000000000000000000
+          000000000000000000B300000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFFDCF5FAFF9CAEB1FF495253FF434B4CFFDBF4F9FFDCF5
+          FAFFDCF5FAFFDCF5FAFFABBEC2FF1A1F1F8C0000000000000000000000000000
+          000000000000000000B300000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFFD5EDF2FF383E40FFD5EDF2FF768486FF869598FFDCF5
+          FAFFDCF5FAFFDCF5FAFFABBEC2FF1A1F1F8C0000000000000000000000000000
+          000000000006000000B100000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFFB1C5C9FF9CAEB1FFDCF5FAFFD9F1F6FF363D3EFFD9F2
+          F7FFDCF5FAFFDCF5FAFFABBEC2FF1A1F1F8C00000007000000920000004A0000
+          0005000000960000005300000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFF7F8D90FF758385FF758385FF758385FF758385FF323839FF616C
+          6EFFB4C9CDFFDCF5FAFFABBEC2FF1A1F1F8C0000008E000000F1000000BB0000
+          00B1000000530000000000000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFABBEC2FFA1B4B7FFA1B4B7FF4A5354FF98A9ADFFA1B4B7FFA1B4
+          B7FFCAE1E5FFDCF5FAFFABBEC2FF1A1F1F8C00000009000000990000004B0000
+          0000000000000000000000000000000000000000000000000000394143F5D5F0
+          F7FFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5
+          FAFFDCF5FAFFDCF5FAFFABBEC2FF1A1F1F8C0000000000000000000000000000
+          000000000000000000000000000000000000000000000000000033393BF6D5F0
+          F7FFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5FAFFDCF5
+          FAFFDCF5FAFFDCF5FAFFA0B3B6FF191B1B830000000000000000000000000000
+          00000000000000000000000000000000000000000000000000002E3435AD2B31
+          32EE2B2F31E82B2F31E82B2F31E82B2F31E82B2F31E82B2F31E82B2F31E82B2F
+          31E82B2F31E82B2F31E81D1F20DD000000220000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        OnClick = spb_TranslateClick
+      end
+      object Label1: TLabel
+        Left = 6
+        Height = 26
+        Top = 6
+        Width = 74
+        Align = alLeft
+        AutoSize = False
+        BorderSpacing.Around = 6
+        Caption = 'Halaman '
+        ParentColor = False
+      end
+      object Panel4: TPanel
+        Left = 153
+        Height = 34
+        Top = 2
+        Width = 394
+        Align = alClient
+        BorderSpacing.Around = 2
+        BevelOuter = bvNone
+        ClientHeight = 34
+        ClientWidth = 394
+        Color = 10477692
+        ParentColor = False
+        TabOrder = 2
+        object scbRecord: TScrollBar
+          Left = 2
+          Height = 30
+          Top = 2
+          Width = 390
+          Align = alClient
+          BorderSpacing.Around = 2
+          PageSize = 0
+          TabOrder = 0
+          OnChange = scbRecordChange
+        end
+      end
+    end
+    object PageControl1: TPageControl
+      Left = 0
+      Height = 712
+      Top = 31
+      Width = 1090
+      ActivePage = tbs_Source
+      Align = alClient
+      TabIndex = 2
+      TabOrder = 1
+      TabPosition = tpLeft
+      object tbsArab: TTabSheet
+        Caption = 'Arab'
+        ClientHeight = 704
+        ClientWidth = 1057
+        object Panel3: TPanel
+          Left = 0
+          Height = 704
+          Top = 0
+          Width = 1057
+          Align = alClient
+          BevelOuter = bvNone
+          ClientHeight = 704
+          ClientWidth = 1057
+          Color = 16119285
+          ParentColor = False
+          TabOrder = 0
+          object DBMemo1: TDBMemo
+            Left = 16
+            Height = 672
+            Top = 16
+            Width = 1025
+            Align = alClient
+            Alignment = taRightJustify
+            BorderSpacing.Around = 16
+            BorderStyle = bsNone
+            Color = 16119285
+            DataField = 'isi'
+            DataSource = DSPage
+            Font.CharSet = ARABIC_CHARSET
+            Font.Height = -23
+            Font.Name = 'LPMQ Isep Misbah'
+            Font.Quality = fqCleartype
+            ParentFont = False
+            ReadOnly = True
+            ScrollBars = ssVertical
+            TabOrder = 0
+          end
+        end
+      end
+      object tbsIndonesia: TTabSheet
+        Caption = 'Indonesia'
+        ClientHeight = 704
+        ClientWidth = 1057
+        OnShow = tbsIndonesiaShow
+        object pnl_browser: TPanel
+          Left = 5
+          Height = 694
+          Top = 5
+          Width = 1047
+          Align = alClient
+          BorderSpacing.Around = 5
+          BevelOuter = bvNone
+          TabOrder = 0
+        end
+      end
+      object tbs_Source: TTabSheet
+        Caption = 'Baris'
+        ClientHeight = 704
+        ClientWidth = 1057
+        OnShow = tbs_SourceShow
+        object grd_Translate: TRxDBGrid
+          Left = 2
+          Height = 700
+          Top = 2
+          Width = 516
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Terjemahan'
+              Width = 245
+              FieldName = 'translate'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+              WordWrap = True
+            end          
+            item
+              Alignment = taRightJustify
+              Font.Height = -15
+              Font.Name = 'Nabi'
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Nash'
+              Width = 246
+              FieldName = 'nash'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+              WordWrap = True
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter, rdgWordWrap]
+          Align = alLeft
+          AlternateColor = 15004668
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 15857905
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = clHighlight
+          DataSource = DSBaris
+          DefaultRowHeight = 75
+          FixedCols = 0
+          Options = [dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisplayMemoText]
+          Scrollbars = ssVertical
+          TabOrder = 0
+          OnCellClick = grd_TranslateCellClick
+          OnDblClick = grd_TranslateDblClick
+        end
+        object Splitter2: TSplitter
+          Left = 520
+          Height = 704
+          Top = 0
+          Width = 6
+        end
+        object pnGPT: TPanel
+          Left = 526
+          Height = 704
+          Top = 0
+          Width = 531
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 2
+        end
+      end
+    end
+    object pnJudul: TPanel
+      Left = 1
+      Height = 29
+      Top = 1
+      Width = 1088
+      Align = alTop
+      BorderSpacing.Around = 1
+      Color = 15790571
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      Font.Quality = fqCleartypeNatural
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 781
+    Top = 0
+    Width = 279
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 781
+    ClientWidth = 279
+    TabOrder = 1
+    object grdKitab: TRxDBGrid
+      Cursor = crHandPoint
+      Left = 2
+      Height = 540
+      Top = 2
+      Width = 275
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Nama Kitab'
+          Width = 271
+          FieldName = 'kitab'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      SelectedFont.Color = clBlack
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alTop
+      AlternateColor = 15662847
+      AutoFillColumns = True
+      BorderSpacing.Around = 2
+      Color = 15335165
+      DrawFullLine = False
+      FocusColor = clRed
+      SelectedColor = 6748063
+      DataSource = DataSource1
+      FixedCols = 0
+      Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ReadOnly = True
+      Scrollbars = ssNone
+      TabOrder = 0
+      OnCellClick = grdKitabCellClick
+    end
+    object grdVolume: TRxDBGrid
+      Cursor = crHandPoint
+      Left = 2
+      Height = 227
+      Top = 552
+      Width = 275
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'jilid'
+          Width = 271
+          FieldName = 'jilid'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      SelectedFont.Color = clBlack
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alClient
+      AlternateColor = 15662847
+      AutoFillColumns = True
+      BorderSpacing.Around = 2
+      Color = 16120557
+      DrawFullLine = False
+      FocusColor = clRed
+      SelectedColor = 15792832
+      DataSource = DSVolume
+      FixedCols = 0
+      Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      Scrollbars = ssNone
+      TabOrder = 1
+      OnCellClick = grdVolumeCellClick
+    end
+    object Splitter1: TSplitter
+      Cursor = crVSplit
+      Left = 0
+      Height = 6
+      Top = 544
+      Width = 279
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+  end
+  object grdVolume1: TRxDBGrid
+    Cursor = crHandPoint
+    Left = 281
+    Height = 777
+    Top = 2
+    Width = 122
+    ColumnDefValues.BlobText = '(blob)'
+    TitleButtons = False
+    AutoSort = True
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'Halaman'
+        Width = 118
+        FieldName = 'nomor_halaman'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Empty)'
+        Filter.NotEmptyValue = '(Not empty)'
+        Filter.AllValue = '(All values)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end>
+    KeyStrokes = <    
+      item
+        Command = rxgcShowFindDlg
+        ShortCut = 16454
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowColumnsDlg
+        ShortCut = 16471
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowFilterDlg
+        ShortCut = 16468
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowSortDlg
+        ShortCut = 16467
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowQuickFilter
+        ShortCut = 16465
+        Enabled = True
+      end    
+      item
+        Command = rxgcHideQuickFilter
+        ShortCut = 16456
+        Enabled = True
+      end    
+      item
+        Command = rxgcSelectAll
+        ShortCut = 16449
+        Enabled = True
+      end    
+      item
+        Command = rxgcDeSelectAll
+        ShortCut = 16429
+        Enabled = True
+      end    
+      item
+        Command = rxgcInvertSelection
+        ShortCut = 16426
+        Enabled = True
+      end    
+      item
+        Command = rxgcOptimizeColumnsWidth
+        ShortCut = 16427
+        Enabled = True
+      end    
+      item
+        Command = rxgcCopyCellValue
+        ShortCut = 16451
+        Enabled = True
+      end>
+    FooterOptions.DrawFullLine = False
+    SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+    SearchOptions.FromStart = False
+    SelectedFont.Color = clBlack
+    OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+    Align = alLeft
+    AlternateColor = 15662847
+    AutoFillColumns = True
+    BorderSpacing.Around = 2
+    Color = 16251896
+    DrawFullLine = False
+    FocusColor = clRed
+    SelectedColor = 14145272
+    DataSource = DSPage
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    Scrollbars = ssNone
+    TabOrder = 2
+    OnCellClick = grdVolume1CellClick
+  end
+  object DKitab: TZTable
+    Connection = frm_Main.Koneksi
+    TableName = 'tafsir_kat2'
+    Left = 504
+    Top = 120
+  end
+  object DataSource1: TDataSource
+    DataSet = DKitab
+    Left = 496
+    Top = 216
+  end
+  object QVolume: TZQuery
+    Connection = frm_Main.Koneksi
+    SQL.Strings = (
+      'select distinct jilid,jilid_angka from tafsir2 where kitab=:v_kitab order by jilid_angka asc'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_kitab'
+        ParamType = ptUnknown
+      end>
+    Left = 496
+    Top = 320
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_kitab'
+        ParamType = ptUnknown
+      end>
+  end
+  object DSVolume: TDataSource
+    DataSet = QVolume
+    Left = 496
+    Top = 416
+  end
+  object QPage: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = QPageAfterOpen
+    AfterScroll = QPageAfterScroll
+    SQL.Strings = (
+      'select hal_angka,'
+      'case when length(terjemah)>5  then concat(''<< '',hal_angka,'' >>'') else hal_angka end as nomor_halaman,'
+      ''
+      'halaman, isi,terjemah,id  from tafsir2 where kitab=:v_kitab and jilid=:v_jilid order by hal_angka asc'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_kitab'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'v_jilid'
+        ParamType = ptUnknown
+      end>
+    Left = 584
+    Top = 320
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_kitab'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'v_jilid'
+        ParamType = ptUnknown
+      end>
+  end
+  object DSPage: TDataSource
+    DataSet = QPage
+    Left = 593
+    Top = 416
+  end
+  object trdTerjemah: TIdThreadComponent
+    Active = False
+    Loop = False
+    Priority = tpNormal
+    StopMode = smTerminate
+    ThreadName = 'TerjemahkanTRD'
+    OnRun = trdTerjemahRun
+    Left = 593
+    Top = 120
+  end
+  object DBaris: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 490
+    Top = 503
+  end
+  object DSBaris: TDataSource
+    DataSet = DBaris
+    Left = 594
+    Top = 504
+  end
+end

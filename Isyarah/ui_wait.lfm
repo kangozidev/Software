@@ -1,0 +1,103 @@
+object frmWait: TfrmWait
+  Left = 356
+  Height = 193
+  Top = 250
+  Width = 497
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Ask To AI'
+  ClientHeight = 193
+  ClientWidth = 497
+  Color = 10327526
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -18
+  Font.Name = 'HvDTrial Pluto Sans Regular'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object Panel1: TPanel
+    Left = 4
+    Height = 185
+    Top = 4
+    Width = 489
+    Align = alClient
+    BorderSpacing.Around = 4
+    BevelOuter = bvNone
+    ClientHeight = 185
+    ClientWidth = 489
+    Color = 15204091
+    ParentColor = False
+    TabOrder = 0
+    object Label1: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      Left = 68
+      Height = 44
+      Top = 40
+      Width = 353
+      Alignment = taCenter
+      Caption = 'Sedang Proses Request'#13#10'Harap Sabar Menunggu Sampai Selesai'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+    end
+    object btn_Cancel: TColorSpeedButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      Cursor = crHandPoint
+      Left = 180
+      Height = 40
+      Top = 128
+      Width = 128
+      Caption = 'Batal'
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      OnClick = btn_CancelClick
+      ParentFont = False
+      TextAutoSize = True
+      Toggle = False
+      Pressed = False
+      PopupMode = False
+      StateNormal.Color = 13498316
+      StateNormal.BorderColor = clLime
+      StateNormal.BorderWidth = 1
+      StateHover.Color = 16120806
+      StateHover.BorderColor = clLime
+      StateHover.BorderWidth = 1
+      StateActive.Color = 13684213
+      StateActive.BorderColor = clRed
+      StateActive.BorderWidth = 1
+      StateDisabled.Color = 13421772
+      StateDisabled.BorderColor = 12566463
+      StateDisabled.BorderWidth = 1
+    end
+    object pbar: TFXProgressBar
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      Left = 40
+      Height = 17
+      Top = 96
+      Width = 409
+      MinValue = 1
+      MaxValue = 100
+      Value = 1
+      Color = 14852966
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 443
+    Top = 159
+  end
+end

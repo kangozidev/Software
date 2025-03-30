@@ -1,0 +1,3270 @@
+object frmStatistika: TfrmStatistika
+  Left = 356
+  Height = 658
+  Top = 250
+  Width = 1393
+  Caption = 'Statistik Huruf dan kata'
+  ClientHeight = 658
+  ClientWidth = 1393
+  Color = 16056314
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -12
+  Font.Name = 'Bahnschrift'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object cyPageControl1: TcyPageControl
+    Left = 0
+    Height = 626
+    Top = 32
+    Width = 1393
+    ActivePage = tbs_SebaranKata
+    Align = alClient
+    Images = icobuku
+    ShowTabs = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpBottom
+    ActiveTabColors.FromColor = clWhite
+    ActiveTabColors.SpeedPercent = 100
+    ActiveTabColors.ToColor = clBtnFace
+    InactiveTabColors.FromColor = clWhite
+    InactiveTabColors.SpeedPercent = 100
+    InactiveTabColors.ToColor = clBtnFace
+    object tbs_SebaranKata: TTabSheet
+      Caption = 'Sebaran Kata'
+      ClientHeight = 622
+      ClientWidth = 1393
+      ImageIndex = 0
+      OnContextPopup = tbs_SebaranKataContextPopup
+      object Panel2: TPanel
+        Left = 313
+        Height = 618
+        Top = 2
+        Width = 772
+        Align = alClient
+        BorderSpacing.Around = 2
+        BevelOuter = bvNone
+        ClientHeight = 618
+        ClientWidth = 772
+        TabOrder = 0
+        object pg_main: TPageControl
+          Left = 0
+          Height = 618
+          Top = 0
+          Width = 772
+          ActivePage = tbs_chart
+          Align = alClient
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = tpBottom
+          object tbs_chart: TTabSheet
+            Caption = 'Chart'
+            ClientHeight = 591
+            ClientWidth = 764
+            object Chart1: TChart
+              Left = 4
+              Height = 287
+              Top = 4
+              Width = 756
+              AutoFocus = True
+              AllowPanning = False
+              AllowZoom = False
+              AntialiasingMode = amOn
+              AxisList = <              
+                item
+                  Grid.Color = 13031878
+                  Grid.Cosmetic = False
+                  Grid.Visible = False
+                  Margin = 80
+                  Marks.Clipped = False
+                  Marks.LabelFont.CharSet = ANSI_CHARSET
+                  Marks.LabelFont.Height = -17
+                  Marks.LabelFont.Name = 'Roboto Medium'
+                  Marks.LabelFont.Pitch = fpVariable
+                  Marks.LabelFont.Quality = fqDraft
+                  Marks.AtDataOnly = True
+                  Marks.Format = '%0.0n'
+                  Marks.LabelBrush.Style = bsClear
+                  Marks.Style = smsCustom
+                  Minors = <>
+                  Range.Max = 1000000000
+                  Range.Min = 1
+                  Title.LabelFont.Orientation = 900
+                  Title.LabelBrush.Style = bsClear
+                end              
+                item
+                  Grid.Color = 15523287
+                  Intervals.Count = 1
+                  Intervals.MaxLength = 114
+                  Intervals.MinLength = 1
+                  Intervals.NiceSteps = '0.4'
+                  Alignment = calBottom
+                  Margin = 7
+                  Marks.LabelBrush.Style = bsClear
+                  Marks.Range.Max = 114
+                  Marks.Range.Min = 1
+                  Minors = <>
+                  Range.Max = 114
+                  Range.Min = 1
+                  Range.UseMax = True
+                  Range.UseMin = True
+                  Title.LabelFont.CharSet = ANSI_CHARSET
+                  Title.LabelFont.Name = 'Segoe UI Semibold'
+                  Title.LabelFont.Pitch = fpVariable
+                  Title.LabelFont.Quality = fqDraft
+                  Title.LabelFont.Style = [fsBold]
+                  Title.Visible = True
+                  Title.LabelBrush.Style = bsClear
+                end>
+              BackColor = 15726835
+              Frame.Visible = False
+              Legend.Font.CharSet = ANSI_CHARSET
+              Legend.Font.Height = -17
+              Legend.Font.Name = 'Roboto Medium'
+              Legend.Font.Pitch = fpVariable
+              Legend.Font.Quality = fqDraft
+              Legend.Frame.Visible = False
+              Legend.Spacing = 14
+              Legend.Visible = True
+              Title.Brush.Color = 16514810
+              Title.Font.CharSet = ANSI_CHARSET
+              Title.Font.Height = -23
+              Title.Font.Name = 'Roboto Medium'
+              Title.Font.Pitch = fpVariable
+              Title.Font.Quality = fqDraft
+              Title.Text.Strings = (
+                'Pencapaian KPP'
+              )
+              Align = alClient
+              BorderSpacing.Around = 4
+              Color = 15726835
+              object CAhuruf: TAreaSeries
+                AreaBrush.Color = clSkyBlue
+              end
+            end
+            object Chart2: TChart
+              Left = 4
+              Height = 292
+              Top = 295
+              Width = 756
+              AutoFocus = True
+              AllowPanning = False
+              AllowZoom = False
+              AntialiasingMode = amOn
+              AxisList = <              
+                item
+                  Grid.Color = 13031878
+                  Grid.Cosmetic = False
+                  Grid.Visible = False
+                  Intervals.Count = 1
+                  Intervals.MaxLength = 20
+                  Intervals.MinLength = 1
+                  Intervals.NiceSteps = '0.1'
+                  Intervals.Options = [aipUseNiceSteps]
+                  Margin = 80
+                  Marks.Clipped = False
+                  Marks.LabelFont.CharSet = ANSI_CHARSET
+                  Marks.LabelFont.Height = -17
+                  Marks.LabelFont.Name = 'Roboto Medium'
+                  Marks.LabelFont.Pitch = fpVariable
+                  Marks.LabelFont.Quality = fqDraft
+                  Marks.AtDataOnly = True
+                  Marks.Format = '%0.0n'
+                  Marks.LabelBrush.Style = bsClear
+                  Marks.Range.Max = 20
+                  Marks.Range.Min = 1
+                  Marks.Style = smsCustom
+                  Minors = <>
+                  Range.Max = 50
+                  Range.Min = 1
+                  Range.UseMax = True
+                  Range.UseMin = True
+                  Title.LabelFont.Orientation = 900
+                  Title.LabelBrush.Style = bsClear
+                end              
+                item
+                  Grid.Color = 15523287
+                  Intervals.Count = 1
+                  Intervals.MaxLength = 114
+                  Intervals.MinLength = 1
+                  Intervals.NiceSteps = '0.06'
+                  Intervals.Options = [aipUseNiceSteps]
+                  Alignment = calBottom
+                  Margin = 7
+                  Marks.LabelBrush.Style = bsClear
+                  Marks.Range.Max = 114
+                  Marks.Range.Min = 1
+                  Marks.Range.UseMax = True
+                  Marks.Range.UseMin = True
+                  Minors = <>
+                  Range.Max = 114
+                  Range.Min = 1
+                  Range.UseMax = True
+                  Range.UseMin = True
+                  Title.LabelFont.CharSet = ANSI_CHARSET
+                  Title.LabelFont.Name = 'Segoe UI Semibold'
+                  Title.LabelFont.Pitch = fpVariable
+                  Title.LabelFont.Quality = fqDraft
+                  Title.LabelFont.Style = [fsBold]
+                  Title.Visible = True
+                  Title.LabelBrush.Style = bsClear
+                end>
+              BackColor = 15726835
+              Frame.Visible = False
+              Legend.Font.CharSet = ANSI_CHARSET
+              Legend.Font.Height = -17
+              Legend.Font.Name = 'Roboto Medium'
+              Legend.Font.Pitch = fpVariable
+              Legend.Font.Quality = fqDraft
+              Legend.Frame.Visible = False
+              Legend.Spacing = 14
+              Legend.Visible = True
+              Title.Brush.Color = 16514810
+              Title.Font.CharSet = ANSI_CHARSET
+              Title.Font.Height = -23
+              Title.Font.Name = 'Roboto Medium'
+              Title.Font.Pitch = fpVariable
+              Title.Font.Quality = fqDraft
+              Title.Text.Strings = (
+                'Pencapaian KPP'
+              )
+              Align = alBottom
+              BorderSpacing.Around = 4
+              Color = 15726835
+              object CKata: TBarSeries
+                BarBrush.Color = 9079551
+              end
+            end
+          end
+          object tbs_daftarayat: TTabSheet
+            Caption = 'Ayat'
+            ClientHeight = 591
+            ClientWidth = 764
+            object pnl_PageSebaran: TPanel
+              Left = 0
+              Height = 591
+              Top = 0
+              Width = 764
+              Align = alClient
+              BevelOuter = bvNone
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object pnCariKataDalamSebaran: TPanel
+        Left = 0
+        Height = 622
+        Top = 0
+        Width = 311
+        Align = alLeft
+        BevelOuter = bvNone
+        ClientHeight = 622
+        ClientWidth = 311
+        TabOrder = 1
+        object GRDCariKataSebaran: TRxDBGrid
+          Cursor = crHandPoint
+          Left = 2
+          Height = 572
+          Top = 2
+          Width = 307
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Alignment = taRightJustify
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Kata'
+              Width = 95
+              FieldName = 'arab'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              Alignment = taCenter
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Dasar Kata'
+              Width = 95
+              FieldName = 'basic'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Terjemah'
+              Width = 96
+              FieldName = 'indonesia'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          SelectedFont.Color = clBlack
+          SelectedFont.Height = -15
+          SelectedFont.Name = 'Bahnschrift'
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+          Align = alClient
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 16515067
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = 13555909
+          DataSource = DSCariKata
+          DefaultRowHeight = 27
+          FixedCols = 0
+          Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          Scrollbars = ssVertical
+          TabOrder = 0
+          OnDblClick = GRDCariKataSebaranDblClick
+        end
+        object edtCariKataSebaran: TEdit
+          Left = 2
+          Height = 22
+          Top = 598
+          Width = 307
+          Align = alBottom
+          Alignment = taCenter
+          BorderSpacing.Around = 2
+          Color = 15400156
+          OnDblClick = edtCariKataSebaranDblClick
+          OnKeyPress = edtCariKataSebaranKeyPress
+          TabOrder = 1
+        end
+        object Label5: TLabel
+          Left = 5
+          Height = 14
+          Top = 579
+          Width = 301
+          Align = alBottom
+          Alignment = taCenter
+          BorderSpacing.Around = 5
+          Caption = 'Cari Kata'
+          ParentColor = False
+        end
+      end
+      object Panel8: TPanel
+        Left = 1087
+        Height = 622
+        Top = 0
+        Width = 306
+        Align = alRight
+        BevelOuter = bvNone
+        ClientHeight = 622
+        ClientWidth = 306
+        TabOrder = 2
+        object RxDBGrid1: TRxDBGrid
+          Cursor = crHandPoint
+          Left = 2
+          Height = 215
+          Top = 405
+          Width = 302
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Alignment = taCenter
+              Font.CharSet = ANSI_CHARSET
+              Font.Height = -14
+              Font.Name = 'Bahnschrift'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Variasi Kata'
+              Width = 140
+              FieldName = 'kata'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+              WordWrap = True
+            end          
+            item
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Jumlah'
+              Width = 141
+              FieldName = 'jkata'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.Color = 69127
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          SelectedFont.Color = 263172
+          SelectedFont.Height = -20
+          SelectedFont.Name = 'Bahnschrift'
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter, rdgWordWrap]
+          FooterColor = 69127
+          Align = alClient
+          AlternateColor = 15727856
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 16382457
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = 13625815
+          DataSource = DSKataByStat
+          DefaultRowHeight = 27
+          FixedCols = 0
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -12
+          Font.Name = 'Bahnschrift'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ParentFont = False
+          ReadOnly = True
+          Scrollbars = ssVertical
+          TabOrder = 0
+          OnDblClick = RxDBGrid1DblClick
+        end
+        object Grd_Huruf: TRxDBGrid
+          Cursor = crHandPoint
+          Left = 2
+          Height = 201
+          Top = 2
+          Width = 302
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Alignment = taCenter
+              Font.CharSet = ANSI_CHARSET
+              Font.Height = -14
+              Font.Name = 'Nabi'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Huruf'
+              Width = 140
+              FieldName = 'h1'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Jumlah'
+              Width = 141
+              FieldName = 'jumlah'
+              DisplayFormat = '#,##0'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          SelectedFont.Color = clBlack
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+          Align = alTop
+          AlternateColor = 16710904
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 16382457
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = 14808313
+          DataSource = DSHuruf
+          DefaultRowHeight = 27
+          FixedCols = 0
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -12
+          Font.Name = 'Bahnschrift'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ParentFont = False
+          ReadOnly = True
+          Scrollbars = ssVertical
+          TabOrder = 1
+          OnDblClick = Grd_HurufDblClick
+          OnTitleClick = Grd_HurufTitleClick
+        end
+        object Splitter1: TSplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 5
+          Top = 205
+          Width = 306
+          Align = alTop
+          ResizeAnchor = akTop
+        end
+        object Grd_Kata: TRxDBGrid
+          Cursor = crHandPoint
+          Left = 2
+          Height = 184
+          Top = 212
+          Width = 302
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Alignment = taCenter
+              Font.CharSet = ANSI_CHARSET
+              Font.Height = -14
+              Font.Name = 'Nabi'
+              Font.Pitch = fpVariable
+              Font.Quality = fqDraft
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Dasar Kata'
+              Width = 140
+              FieldName = 'basic'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Jumlah'
+              Width = 141
+              FieldName = 'jk'
+              DisplayFormat = '#,##0'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          SelectedFont.Color = clBlack
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+          Align = alTop
+          AlternateColor = 16121587
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 16382457
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = 14808313
+          DataSource = DSKata
+          DefaultRowHeight = 27
+          FixedCols = 0
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -12
+          Font.Name = 'Bahnschrift'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          ParentFont = False
+          Scrollbars = ssVertical
+          TabOrder = 3
+          OnDblClick = Grd_KataDblClick
+          OnTitleClick = Grd_KataTitleClick
+        end
+        object Splitter2: TSplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 5
+          Top = 398
+          Width = 306
+          Align = alTop
+          ResizeAnchor = akTop
+        end
+      end
+    end
+    object tbs_HisabJummal: TTabSheet
+      Caption = 'Hisab Jummal'
+      ClientHeight = 622
+      ClientWidth = 1393
+      ImageIndex = 4
+      object Panel4: TPanel
+        Left = 0
+        Height = 582
+        Top = 0
+        Width = 311
+        Align = alLeft
+        BevelOuter = bvNone
+        ClientHeight = 582
+        ClientWidth = 311
+        TabOrder = 0
+        object GRDCariKata: TRxDBGrid
+          Cursor = crHandPoint
+          Left = 2
+          Height = 532
+          Top = 2
+          Width = 307
+          ColumnDefValues.BlobText = '(blob)'
+          TitleButtons = False
+          AutoSort = True
+          Columns = <          
+            item
+              Alignment = taRightJustify
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Kata'
+              Width = 95
+              FieldName = 'arab'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              Alignment = taCenter
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Dasar Kata'
+              Width = 95
+              FieldName = 'basic'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end          
+            item
+              MinSize = 8
+              MaxSize = 160
+              Title.Alignment = taCenter
+              Title.Orientation = toHorizontal
+              Title.Caption = 'Terjemah'
+              Width = 96
+              FieldName = 'indonesia'
+              EditButtons = <>
+              Filter.DropDownRows = 0
+              Filter.EmptyValue = '(Empty)'
+              Filter.NotEmptyValue = '(Not empty)'
+              Filter.AllValue = '(All values)'
+              Filter.EmptyFont.Style = [fsItalic]
+              Filter.ItemIndex = -1
+              Footers = <>
+            end>
+          KeyStrokes = <          
+            item
+              Command = rxgcShowFindDlg
+              ShortCut = 16454
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowColumnsDlg
+              ShortCut = 16471
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowFilterDlg
+              ShortCut = 16468
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowSortDlg
+              ShortCut = 16467
+              Enabled = True
+            end          
+            item
+              Command = rxgcShowQuickFilter
+              ShortCut = 16465
+              Enabled = True
+            end          
+            item
+              Command = rxgcHideQuickFilter
+              ShortCut = 16456
+              Enabled = True
+            end          
+            item
+              Command = rxgcSelectAll
+              ShortCut = 16449
+              Enabled = True
+            end          
+            item
+              Command = rxgcDeSelectAll
+              ShortCut = 16429
+              Enabled = True
+            end          
+            item
+              Command = rxgcInvertSelection
+              ShortCut = 16426
+              Enabled = True
+            end          
+            item
+              Command = rxgcOptimizeColumnsWidth
+              ShortCut = 16427
+              Enabled = True
+            end          
+            item
+              Command = rxgcCopyCellValue
+              ShortCut = 16451
+              Enabled = True
+            end>
+          FooterOptions.DrawFullLine = False
+          SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+          SearchOptions.FromStart = False
+          SelectedFont.Color = clBlack
+          SelectedFont.Height = -15
+          SelectedFont.Name = 'Bahnschrift'
+          OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+          Align = alClient
+          AutoFillColumns = True
+          BorderSpacing.Around = 2
+          Color = 16053743
+          DrawFullLine = False
+          FocusColor = clRed
+          SelectedColor = 13555909
+          DataSource = DSCariKata
+          FixedCols = 0
+          Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+          Scrollbars = ssVertical
+          TabOrder = 0
+          OnDblClick = GRDCariKataDblClick
+        end
+        object edtCariKata: TEdit
+          Left = 2
+          Height = 22
+          Top = 558
+          Width = 307
+          Align = alBottom
+          Alignment = taCenter
+          BorderSpacing.Around = 2
+          Color = 15400156
+          OnDblClick = edtCariKataDblClick
+          OnKeyPress = edtCariKataKeyPress
+          TabOrder = 1
+        end
+        object Label6: TLabel
+          Left = 5
+          Height = 14
+          Top = 539
+          Width = 301
+          Align = alBottom
+          Alignment = taCenter
+          BorderSpacing.Around = 5
+          Caption = 'Cari Kata'
+          ParentColor = False
+        end
+      end
+      object Panel5: TPanel
+        Left = 1031
+        Height = 582
+        Top = 0
+        Width = 362
+        Align = alRight
+        BevelOuter = bvNone
+        ClientHeight = 582
+        ClientWidth = 362
+        Color = 15922153
+        ParentColor = False
+        TabOrder = 1
+        object PageControl2: TPageControl
+          Left = 0
+          Height = 582
+          Top = 0
+          Width = 362
+          ActivePage = TabSheet1
+          Align = alClient
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = tpBottom
+          object TabSheet1: TTabSheet
+            Caption = 'Kata'
+            ClientHeight = 555
+            ClientWidth = 354
+            object GRDJummalKata: TRxDBGrid
+              Cursor = crHandPoint
+              Left = 2
+              Height = 551
+              Top = 2
+              Width = 350
+              ColumnDefValues.BlobText = '(blob)'
+              TitleButtons = False
+              AutoSort = True
+              Columns = <              
+                item
+                  Alignment = taCenter
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Surat'
+                  Width = 47
+                  FieldName = 'ids'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Ayat'
+                  Width = 47
+                  FieldName = 'ida'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  Alignment = taCenter
+                  Font.CharSet = ARABIC_CHARSET
+                  Font.Height = -14
+                  Font.Name = 'Nabi'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Kata'
+                  Width = 47
+                  FieldName = 'kata'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Jumlah Huruf'
+                  Width = 47
+                  FieldName = 'JH'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Ter ulang'
+                  Width = 47
+                  FieldName = 'terulang'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Nilai'
+                  Width = 47
+                  FieldName = 'JMK'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Total'
+                  Width = 51
+                  FieldName = 'TJMK'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end>
+              KeyStrokes = <              
+                item
+                  Command = rxgcShowFindDlg
+                  ShortCut = 16454
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowColumnsDlg
+                  ShortCut = 16471
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowFilterDlg
+                  ShortCut = 16468
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowSortDlg
+                  ShortCut = 16467
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowQuickFilter
+                  ShortCut = 16465
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcHideQuickFilter
+                  ShortCut = 16456
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcSelectAll
+                  ShortCut = 16449
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcDeSelectAll
+                  ShortCut = 16429
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcInvertSelection
+                  ShortCut = 16426
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcOptimizeColumnsWidth
+                  ShortCut = 16427
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcCopyCellValue
+                  ShortCut = 16451
+                  Enabled = True
+                end>
+              FooterOptions.DrawFullLine = False
+              SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+              SearchOptions.FromStart = False
+              SelectedFont.Color = clBlack
+              OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgFilter, rdgAllowQuickFilter, rdgWordWrap]
+              Align = alClient
+              AlternateColor = 16120056
+              AutoFillColumns = True
+              BorderSpacing.Around = 2
+              BorderStyle = bsNone
+              Color = 15856626
+              DrawFullLine = False
+              FocusColor = clRed
+              SelectedColor = 14738658
+              DataSource = DSKataJummal
+              FixedCols = 0
+              Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+              PopupMenu = pmKata
+              ReadOnly = True
+              Scrollbars = ssVertical
+              TabOrder = 0
+              OnCellClick = GRDJummalKataCellClick
+              OnDrawColumnCell = GRDJummalKataDrawColumnCell
+              OnDblClick = GRDJummalKataDblClick
+              OnTitleClick = GRDJummalKataTitleClick
+            end
+          end
+          object TabSheet2: TTabSheet
+            Caption = 'Huruf'
+            ClientHeight = 555
+            ClientWidth = 354
+            object GRDJummalHuruf: TRxDBGrid
+              Cursor = crHandPoint
+              Left = 4
+              Height = 547
+              Top = 4
+              Width = 346
+              ColumnDefValues.BlobText = '(blob)'
+              TitleButtons = False
+              AutoSort = True
+              Columns = <              
+                item
+                  Alignment = taCenter
+                  Font.CharSet = ANSI_CHARSET
+                  Font.Height = -18
+                  Font.Name = 'Nabi'
+                  Font.Pitch = fpVariable
+                  Font.Quality = fqDraft
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Huruf'
+                  Width = 82
+                  FieldName = 'huruf'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Hisab'
+                  Width = 82
+                  FieldName = 'nilai'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Terulang'
+                  Width = 82
+                  FieldName = 'terulang'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Nilai'
+                  Width = 83
+                  FieldName = 'jummal'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end>
+              KeyStrokes = <              
+                item
+                  Command = rxgcShowFindDlg
+                  ShortCut = 16454
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowColumnsDlg
+                  ShortCut = 16471
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowFilterDlg
+                  ShortCut = 16468
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowSortDlg
+                  ShortCut = 16467
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowQuickFilter
+                  ShortCut = 16465
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcHideQuickFilter
+                  ShortCut = 16456
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcSelectAll
+                  ShortCut = 16449
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcDeSelectAll
+                  ShortCut = 16429
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcInvertSelection
+                  ShortCut = 16426
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcOptimizeColumnsWidth
+                  ShortCut = 16427
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcCopyCellValue
+                  ShortCut = 16451
+                  Enabled = True
+                end>
+              FooterOptions.DrawFullLine = False
+              SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+              SearchOptions.FromStart = False
+              SelectedFont.Color = clBlack
+              OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgFilter, rdgAllowQuickFilter, rdgWordWrap]
+              Align = alClient
+              AlternateColor = 16381938
+              AutoFillColumns = True
+              BorderSpacing.Around = 4
+              BorderStyle = bsNone
+              Color = 15857642
+              DrawFullLine = False
+              FocusColor = clRed
+              SelectedColor = 14286839
+              DataSource = DSHurufJummal
+              FixedCols = 0
+              Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+              Scrollbars = ssVertical
+              TabOrder = 0
+              OnDrawColumnCell = GRDJummalHurufDrawColumnCell
+              OnTitleClick = GRDJummalHurufTitleClick
+            end
+          end
+        end
+      end
+      object Panel3: TPanel
+        Left = 0
+        Height = 40
+        Top = 582
+        Width = 1393
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 40
+        ClientWidth = 1393
+        Color = 15001819
+        ParentColor = False
+        TabOrder = 2
+        object Label1: TLabel
+          Left = 429
+          Height = 20
+          Top = 13
+          Width = 93
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Bilangan Penguji  '
+          ParentColor = False
+        end
+        object cbBILANGAN: TComboBox
+          Left = 532
+          Height = 22
+          Top = 11
+          Width = 80
+          Align = alLeft
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 11
+          ItemHeight = 14
+          ItemIndex = 18
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16'
+            '17'
+            '18'
+            '19'
+            '20'
+            '21'
+            '22'
+            '23'
+            '24'
+            '25'
+            '26'
+            '27'
+            '28'
+            '29'
+            '30'
+            '31'
+            '32'
+            '33'
+            '34'
+            '35'
+            '36'
+            '37'
+            '38'
+            '39'
+            '40'
+            '41'
+            '42'
+            '43'
+            '44'
+            '45'
+            '46'
+            '47'
+            '48'
+            '49'
+            '50'
+            '51'
+            '52'
+            '53'
+            '54'
+            '55'
+            '56'
+            '57'
+            '58'
+            '59'
+            '60'
+            '61'
+            '62'
+            '63'
+            '64'
+            '65'
+            '66'
+            '67'
+            '68'
+            '69'
+            '70'
+            '71'
+            '72'
+            '73'
+            '74'
+            '75'
+            '76'
+            '77'
+            '78'
+            '79'
+            '80'
+            '81'
+            '82'
+            '83'
+            '84'
+            '85'
+            '86'
+            '87'
+            '88'
+            '89'
+            '90'
+            '91'
+            '92'
+            '93'
+            '94'
+            '95'
+            '96'
+            '97'
+            '98'
+            '99'
+            '100'
+            '101'
+            '102'
+            '103'
+            '104'
+            '105'
+            '106'
+            '107'
+            '108'
+            '109'
+            '110'
+            '111'
+            '112'
+            '113'
+            '114'
+          )
+          OnChange = cbBILANGANChange
+          TabOrder = 0
+          Text = '19'
+        end
+        object EdtCariKataArab: TEdit
+          Left = 76
+          Height = 28
+          Hint = 'Kata Dalam Bahasa Arab'
+          Top = 6
+          Width = 72
+          Align = alLeft
+          Alignment = taCenter
+          BorderSpacing.Around = 6
+          Color = 13560569
+          Font.CharSet = ARABIC_CHARSET
+          Font.Height = -14
+          Font.Name = 'Nabi'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnDblClick = EdtCariKataArabDblClick
+          OnKeyPress = EdtCariKataArabKeyPress
+          ParentFont = False
+          ParentShowHint = False
+          ReadOnly = True
+          ShowHint = True
+          TabOrder = 1
+        end
+        object Label2: TLabel
+          Left = 41
+          Height = 20
+          Top = 13
+          Width = 28
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Filter'
+          ParentColor = False
+        end
+        object edtCountKataCari: TEdit
+          Left = 775
+          Height = 28
+          Top = 6
+          Width = 50
+          Align = alLeft
+          BorderSpacing.Around = 6
+          Color = 16251627
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object Label3: TLabel
+          Left = 619
+          Height = 20
+          Top = 13
+          Width = 66
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Jumlah Data'
+          ParentColor = False
+        end
+        object spb_JummalAll: TSpeedButton
+          Left = 0
+          Height = 40
+          Top = 0
+          Width = 34
+          Align = alLeft
+          Flat = True
+          Glyph.Data = {
+            36090000424D3609000000000000360000002800000018000000180000000100
+            2000000000000009000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000DFAF2010E2AA2860E2AA
+            28AEE1AA27D7E1AA27F4E1AA27F5E1AA27D8E1AA27B0E0A92762E3AA2B120000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000DF9F2008E1A92777E1AA27EFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27F1E2AA
+            277BE3AA1C090000000000000000000000000000000000000000000000000000
+            00000000000000000000E2A7271AE0AA28C8E1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE2AA27D0DEAD291F00000000000000000000000000000000000000000000
+            000000000000E2A7271AE1AA27E2E1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27E5E5A7231D000000000000000000000000000000000000
+            0000DF9F2008E1AA27C9E1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27CDE3AA1C090000000000000000000000000000
+            0000E1AB2776E1AA27FFE1AA27FFE1AA27FFEED088FFFDF9F1FFFDF9F1FFFDF9
+            F1FFECCA78FFE1AA27FFE1AA27FFEBC770FFFDF9F1FFFDF9F1FFFDF9F1FFEFD3
+            8FFFE1AA27FFE1AA27FFE1AA27FFE0AB277C000000000000000000000000DDAA
+            220FE1AA27EEE1AA27FFE1AA27FFE1AA27FFF1D79AFFFFFFFFFFFFFFFFFFFFFF
+            FFFFEDCC7EFFE1AA27FFE1AA27FFECC976FFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AA27FFE1AA27FFE1AA27FFE1AA27F2E6A626140000000000000000E1AA
+            265DE1AA27FFE1AA27FFE1AA27FFE1AA27FFF1D79AFFFFFFFFFFFFFFFFFFFFFF
+            FFFFEDCC7EFFE1AA27FFE1AA27FFECC976FFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE0AB26640000000000000000E1AA
+            27ABE1AA27FFE1AA27FFE1AA27FFE1AA27FFF1D79AFFFFFFFFFFFFFFFFFFFFFF
+            FFFFEDCC7EFFE1AA27FFE1AA27FFECC976FFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA26B30000000000000000E1AA
+            28D5E1AA27FFE1AA27FFE1AA27FFE1AA27FFF1D79AFFFFFFFFFFFFFFFFFFFFFF
+            FFFFEDCC7EFFE1AA27FFE1AA27FFECC976FFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27DC0000000000000000E1AA
+            27EEE1AA27FFE1AA27FFE1AA27FFE1AA27FFF1D79AFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFBF5E6FFF9EED4FFF9EED4FFFBF4E4FFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27F60000000000000000E1AA
+            27EFE1AA27FFE1AA27FFE1AA27FFF0D696FFFAF0DAFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAF1
+            DCFFF1D89BFFE1AA27FFE1AA27FFE1AA27FFE1AA27F7FFFF000100000000E1AA
+            27D6E1AA27FFE1AA27FFE1AA27FFF2DAA2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFF3DDA9FFE1AA27FFE1AA27FFE1AA27FFE1AA27DD0000000000000000E1AA
+            27ABE1AA27FFE1AA27FFE1AA27FFE1AA28FFEFD28CFFFFFEFDFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2DA
+            A2FFE1AB29FFE1AA27FFE1AA27FFE1AA27FFE1AA26B30000000000000000E1AB
+            265EE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFEBC66EFFFEFCF7FFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFDFAFFECCA77FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1A926650000000000000000DDAA
+            220FE1AA27EEE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE7BC56FFFCF7
+            EBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDF9F0FFE9BF5DFFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27F2E4AE281300000000000000000000
+            0000E1A92777E1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE4B3
+            3EFFF9EFD5FFFFFFFFFFFFFFFFFFFBF3E1FFE6B748FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE0A9277D0000000000000000000000000000
+            0000DF9F2008E1AA27C9E1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE3AE32FFF5E3B8FFF6E5BDFFE3AF35FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27CDE3AA1C090000000000000000000000000000
+            000000000000E0AD2919E2AA27E1E1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27E5E5A7231D000000000000000000000000000000000000
+            00000000000000000000E0AD2919E1AA27C9E1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA
+            27FFE2AA27D0DEAD291F00000000000000000000000000000000000000000000
+            0000000000000000000000000000DF9F2008E1AA2678E1AA27EFE1AA27FFE1AA
+            27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27FFE1AA27F1E2AA
+            277BE3AA1C090000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000DFAF2010E2AA2860E2AA
+            28AEE1AA27D7E1AA27F2E1AA27F3E1AA27D7E1AA27B0E0A92762E3AA2B120000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = spb_JummalAllClick
+        end
+        object spb_CariKata: TSpeedButton
+          Left = 154
+          Height = 40
+          Top = 0
+          Width = 34
+          Align = alLeft
+          Flat = True
+          Glyph.Data = {
+            36090000424D3609000000000000360000002800000018000000180000000100
+            2000000000000009000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000018180D0B610000001700000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000180C0C3F3D251FDD77493CFF37221CDB0A000019000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000180C0C3F432922DF8C5647FF8C5647FF784A3DFF150D0A62000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000000000000180C
+            0C3F432922DF8C5647FF8C5647FF8C5647FF3D261FDC0A00001A000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000140C08404127
+            20DD8C5647FF8C5647FF8C5647FF452922DF170F0C4200000000000000000000
+            000000000000000000000000000000000001231F1351413A21A85F5331C2675A
+            35CE635733C854492BB9322C1A8B0909001C000000001A15113C2A1E1AE2613D
+            33EF8C5647FF8C5647FF452922DE140C0C410000000000000000000000000000
+            000000000000000000002926134451462AC7BCA660F7F5D77EFFF6D87EFFF6D8
+            7EFFF6D87EFFF6D87EFFE8CB77FF837344E22D2717B147342CE09B7261FF5D44
+            3AE9603C32EF452922DF170F0C42000000000000000000000000000000000000
+            000000000000352F1B73917F4AE7F6D87EFFF6D87EFFF6D87EFFF6D87EFFE8CC
+            77FFF0D37BFFF6D87EFFF6D87EFFF6D87EFFDDC371FE52462DE28D6858FD9B72
+            61FF2C201BE1130B0B4400000000000000000000000000000000000000000000
+            00002C26165DA39053ECF6D87EFFF6D87EFFCCB46BFF7D7255FF827A69FF958D
+            80FF8C8475FF817762FF928256FFEFD27BFFF6D87EFFF0D37BFF52462CE24836
+            2CE01B130F430000000000000000000000000000000000000000000000000000
+            001470623ADDF6D87EFFF6D87EFF9B8A5AFF9C9488FFFDF3EBFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFE2D9D1FF716954FFDCC172FFF6D87EFFE2C674FE3029
+            19AE000000000000000000000000000000000000000000000000000000003C35
+            1F9EE9CD78FFF6D87EFFAC9960FFB3ABA0FFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFAF0E8FF716954FFEFD27BFFF6D87EFF8473
+            44E20909001D000000000000000000000000000000000000000000000002695B
+            35D4F6D87EFFEFD27BFF7E7562FFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFE1D8D0FF928256FFF6D87EFFE7CA
+            76FF322C1A8A000000000000000000000000000000000000000005050031AA96
+            58F6F6D87EFFAF9A5EFFCDC4BCFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFF807661FFF6D87EFFF6D8
+            7EFF544A2CB90000000000000000000000000000000000000000221C115ACDB4
+            69FFF6D87EFF847752FFFEF4ECFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFF8C8476FFF0D37BFFF6D8
+            7EFF635733C800000000000000000000000000000000000000002B26166AD6BC
+            6EFFF6D87EFF847754FFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFF968E81FFE7CA76FFF6D8
+            7EFF685C35CE0000000000000000000000000000000000000000120F0746C0A9
+            62FEF6D87EFF928255FFECE3DBFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFF837B6AFFF6D87EFFF6D8
+            7EFF5D5331C20000000000000000000000000000000000000000000000138574
+            44E5F6D87EFFD6BC6FFF9E968AFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFFFDF3EBFF7D7256FFF6D87EFFF5D7
+            7EFF433C22A70000000000000000000000000000000000000000000000005148
+            29BFF6D87EFFF6D87EFF7C7153FFF0E7DFFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFFFF5EDFF9C9488FFCCB46CFFF6D87EFFBBA5
+            61F823201350000000000000000000000000000000000000000000000000251F
+            1352B59F5DF2F6D87EFFE9CD78FF706853FFF0E7DFFFFFF5EDFFFFF5EDFFFFF5
+            EDFFFFF5EDFFFFF5EDFFFFF5EDFFB4ACA1FF9B8A5AFFF6D87EFFF6D87EFF4F46
+            29C7000000020000000000000000000000000000000000000000000000000000
+            0000403721B4E6CA76FFF6D87EFFE9CD78FF7E7353FF9E968AFFEEE5DDFFFFF5
+            EDFFFFF5EDFFCDC4BDFF7E7563FFAC9960FFF6D87EFFF6D87EFF93824BE62824
+            1246000000000000000000000000000000000000000000000000000000000000
+            00000000000B474025C8E6CA76FFF6D87EFFF6D87EFFD6BC6EFF918155FF8578
+            55FF837652FFAE9A5FFFEFD27BFFF6D87EFFF6D87EFFA59154EC342E1A750000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000B403721B4B59E5DF4F6D87EFFF6D87EFFF6D87EFFF6D8
+            7EFFF6D87EFFF6D87EFFF6D87EFFE8CC77FF706239DD3129185E000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000002724155452482BC0837343E4BFA862FFD5BB
+            6DFFCDB469FFAA9658F7675B35D53D37209F0000001400000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000001216120B452E29
+            16692724135C0000002F00000002000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = spb_CariKataClick
+        end
+        object EdtCariKataArabBasic: TEdit
+          Left = 194
+          Height = 28
+          Hint = 'Kata Dalam Bahasa Arab'
+          Top = 6
+          Width = 74
+          Align = alLeft
+          Alignment = taCenter
+          BorderSpacing.Around = 6
+          Color = 13564383
+          Font.CharSet = ARABIC_CHARSET
+          Font.Height = -14
+          Font.Name = 'Nabi'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnDblClick = EdtCariKataArabBasicDblClick
+          OnKeyPress = EdtCariKataArabKeyPress
+          ParentFont = False
+          ParentShowHint = False
+          ReadOnly = True
+          ShowHint = True
+          TabOrder = 3
+        end
+        object spb_CariKataBasic: TSpeedButton
+          Left = 274
+          Height = 40
+          Top = 0
+          Width = 34
+          Align = alLeft
+          Flat = True
+          Glyph.Data = {
+            36090000424D3609000000000000360000002800000018000000180000000100
+            2000000000000009000064000000640000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000074A2DC2C709C
+            DE9B6F9DDEC66E9BDCDC6D9BDCDB6F9DDEC6719CE09A77A0E12B000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000749EE06C6D9ADCEE6B98DAFF709D
+            DEFF739FE0FF75A1E2FF75A1E2FF739FE0FF719CDEFF6B98DAFF6D99DBEF729D
+            DE6B000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000076A7D81A6E9ADBE36E9ADCFF77A3E3FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF78A3E2FF6E9A
+            DCFF6D9BDCE27AA3E01900000000000000000000000000000000000000000000
+            00000000000077A3E03A6D9ADCF576A1E1FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF76A2E2FF6D99DBF577A3E03A000000000000000000000000000000000000
+            000071A1D91B6F9BDDF279A4E4FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF79A4E4FF6F9BDDF476A4DB1C0000000000000000000000000000
+            00006F9ADDDF79A4E4FF7CA7E6FF6D9ADBFF6E9ADCFF7BA6E5FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF79A4E4FF709ADDDF000000000000000000000000719C
+            E06C77A2E2FF7CA7E6FF7CA7E6FFC5D7F1FFBACEEDFF6E9BDCFF7BA6E5FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF76A2E2FF729FDF700000000000000000729E
+            DFE07CA7E6FF7CA7E6FF7CA7E6FFE1EBF9FFFFFFFFFFC4D6F0FF6E9BDCFF7BA6
+            E5FF7CA7E6FF7CA7E6FF7CA6E5FF7BA6E5FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF719DDEE200000000759FDF3078A4
+            E3FE7CA7E6FF7CA7E6FF7CA7E6FF87AEE8FFE7EFFAFFFFFFFFFFC5D6F0FF6E9B
+            DCFF77A3E3FF6E9BDDFF6896D8FF6895D8FF6896D8FF6E9BDDFF78A3E3FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF78A3E3FF769DDD34739FE1907CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF86AEE8FFE7EFFAFFFFFFFFFFC4D6
+            F0FF739CDBFFB3C9EBFFE3ECF8FFF1F5FCFFE3EBF8FFB8CDEDFF759FDCFF75A0
+            E1FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF72A0E19178A2E49F7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF86AEE8FFE7EEFAFFFFFF
+            FFFFFCFDFEFFFFFFFFFFF4F7FDFFE5EDFAFFF6F9FDFFFFFFFFFFF4F8FCFF8EB0
+            E3FF78A4E3FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF77A3E49E7AA4E6AE7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF8DAFE3FFFFFF
+            FFFFF9FBFEFFB0CAF0FF7DA8E6FF7CA7E6FF7EA8E6FFB7CFF1FFFBFCFEFFF6F9
+            FDFF81A8E1FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF79A4E3B37BA6E4AC7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFC5D7F0FFFFFF
+            FFFFABC6EFFF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFB5CDF1FFFFFF
+            FFFFC6D7F0FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7AA7E4AB7DA7E6917CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7BA6E5FFF2F6FCFFE7EE
+            F9FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7DA8E6FFF1F5
+            FCFFF6F8FDFF7BA6E5FF7CA7E6FF7CA7E6FF7CA7E6FF7CA6E6907CA7E76B7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF84ACE7FFFFFFFFFFD1DF
+            F3FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFDBE6
+            F6FFFFFFFFFF83ACE7FF7CA7E6FF7CA7E6FF7CA7E6FF7CA8E7697BA5E61F7CA7
+            E6FE7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7FA9E6FFFDFEFFFFE0E9
+            F7FF75A0E1FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF739FE0FFEBF1
+            FAFFFBFCFEFF7DA8E6FF7CA7E6FF7CA7E6FF7CA7E6FF80A7E720000000007CA7
+            E6C87CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFDEE9F8FFFEFF
+            FFFF8FB1E3FF73A0E0FF7CA7E6FF7CA7E6FF7CA7E5FF739EDFFF9AB9E5FFFFFF
+            FFFFD9E5F7FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6C900000000000000007CA6
+            E6487CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFA0BFEDFFFEFF
+            FFFFF0F4FBFF8DAFE2FF6A96D9FF6C99DBFF6996D9FF94B4E3FFF4F7FCFFFEFE
+            FFFF9ABBECFF7CA7E6FF7CA7E6FF7CA7E6FF7EA5E64700000000000000000000
+            00007BA7E6B67CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FFBDD3
+            F2FFFFFFFFFFFEFEFFFFDBE6F6FFCADAF1FFDFE9F7FFFFFFFFFFFEFEFFFFB4CD
+            F1FF7CA7E6FF7CA7E6FF7CA7E6FF7CA8E6B50000000000000000000000000000
+            000080AAE3127BA7E7DB7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FFA6C3EEFFE7EFFAFFFFFFFFFFFFFFFFFFFEFFFFFFE2ECFAFF9FBEEDFF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6DE80A6E6140000000000000000000000000000
+            00000000000079A8E4267BA7E7DB7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF87AFE8FF93B6EAFF86AEE8FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6DC79A8E426000000000000000000000000000000000000
+            0000000000000000000079A1E4137CA7E6B77CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7
+            E6FF7BA7E6B680AAE31200000000000000000000000000000000000000000000
+            0000000000000000000000000000000000007EA5E6477CA7E5C77CA7E6FF7CA7
+            E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6FF7CA7E6C97AA8
+            E749000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000007BA5E61F7CA7
+            E76B7CA8E7927DA7E6AA7CA7E6AD7CA8E7927CA6E56D7CAAE821000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = spb_CariKataBasicClick
+        end
+        object ckFilterKata: TCheckBox
+          Left = 344
+          Height = 36
+          Top = 2
+          Width = 78
+          Align = alLeft
+          BorderSpacing.Around = 2
+          Caption = 'Filter Kata '
+          TabOrder = 4
+        end
+        object edtCountKata: TEdit
+          Left = 1044
+          Height = 28
+          Top = 6
+          Width = 50
+          Align = alLeft
+          BorderSpacing.Around = 6
+          Color = 16251627
+          ReadOnly = True
+          TabOrder = 5
+        end
+        object edtCountAyat: TEdit
+          Left = 956
+          Height = 28
+          Top = 6
+          Width = 50
+          Align = alLeft
+          BorderSpacing.Around = 6
+          Color = 16251627
+          ReadOnly = True
+          TabOrder = 6
+        end
+        object edtCountSurat: TEdit
+          Left = 868
+          Height = 28
+          Top = 6
+          Width = 50
+          Align = alLeft
+          BorderSpacing.Around = 6
+          Color = 16251627
+          ReadOnly = True
+          TabOrder = 7
+        end
+        object Label7: TLabel
+          Left = 692
+          Height = 20
+          Top = 13
+          Width = 76
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Kata Yang Cari'
+          ParentColor = False
+        end
+        object Label8: TLabel
+          Left = 832
+          Height = 20
+          Top = 13
+          Width = 29
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Surat'
+          ParentColor = False
+        end
+        object Label9: TLabel
+          Left = 925
+          Height = 20
+          Top = 13
+          Width = 24
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Ayat'
+          ParentColor = False
+        end
+        object Label10: TLabel
+          Left = 1013
+          Height = 20
+          Top = 13
+          Width = 24
+          Align = alLeft
+          BorderSpacing.Top = 6
+          BorderSpacing.Around = 7
+          Caption = 'Kata'
+          ParentColor = False
+        end
+        object spb_Clean: TSpeedButton
+          Left = 308
+          Height = 40
+          Top = 0
+          Width = 34
+          Align = alLeft
+          Flat = True
+          Glyph.Data = {
+            36090000424D3609000000000000360000002800000018000000180000000100
+            2000000000000009000064000000640000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000AAAA2B069EAE17889EAF17E59EAF17FF9EAF
+            17FF9EAF17FF9EAF17FF9EAF17FF9EAF17FF9EAF17FF9EAF17FF9EAF17E59EAE
+            1788AAAA2B060000000000000000000000000000000000000000000000000000
+            00000000000000000000000000009AB01E8899B11EFF99B11EFF99B11EFF99B1
+            1EFF99B11EFF99B11EFF99B11EFF99B11EFF99B11EFF99B11EFF99B11EFF99B1
+            1EFF99B21E870000000000000000000000000000000000000000000000000000
+            000000000000000000000000000094B225E594B225FF95B3263C000000000000
+            000000000000000000000000000000000000000000000000000092B4263D94B2
+            25FF94B225E50000000000000000000000000000000000000000000000000000
+            00000000000000000000000000008FB42DFF8FB42DFF00000000000000000000
+            0000000000000000000000000000000000000000000000000000000000008FB4
+            2DFF8FB42DFF0000000000000000000000000000000000000000000000000000
+            00000000000000000000000000008AB634FF8AB634FF00000000000000008AB7
+            344A8CB6344900000000000000008AB7344A8CB6344900000000000000008AB6
+            34FF8AB634FF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000085B73BFF85B73BFF000000000000000085B7
+            3BF885B73BF7000000000000000085B73BF885B73BF7000000000000000085B7
+            3BFF85B73BFF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000080B942FF80B942FF000000000000000080B9
+            42FF80B942FF000000000000000080B942FF80B942FF000000000000000080B9
+            42FF80B942FF0000000000000000000000000000000000000000000000000000
+            00000000000000000000000000007BBB4AFF7BBB4AFF00000000000000007BBB
+            4AFF7BBB4AFF00000000000000007BBB4AFF7BBB4AFF00000000000000007BBB
+            4AFF7BBB4AFF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000077BC51FF77BC51FF000000000000000077BC
+            51FF77BC51FF000000000000000077BC51FF77BC51FF000000000000000077BC
+            51FF77BC51FF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000072BE58FF72BE58FF000000000000000072BE
+            58FF72BE58FF000000000000000072BE58FF72BE58FF000000000000000072BE
+            58FF72BE58FF0000000000000000000000000000000000000000000000000000
+            00000000000000000000000000006DBF5FFF6DBF5FFF00000000000000006DBF
+            5FFF6DBF5FFF00000000000000006DBF5FFF6DBF5FFF00000000000000006DBF
+            5FFF6DBF5FFF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000068C167FF68C167FF000000000000000068C1
+            67F868C167F8000000000000000068C167F868C167F8000000000000000068C1
+            67FF68C167FF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000063C36EFF63C36EFF000000000000000065C3
+            6F4C63C26D4B000000000000000065C36F4C63C26D4B000000000000000063C3
+            6EFF63C36EFF0000000000000000000000000000000000000000000000000000
+            00000000000000000000000000005EC475FF5EC475FF00000000000000000000
+            0000000000000000000000000000000000000000000000000000000000005EC4
+            75FF5EC475FF0000000000000000000000000000000000000000000000000000
+            000000000000000000000000000059C67CFF59C67CFF00000000000000000000
+            00000000000000000000000000000000000000000000000000000000000059C6
+            7CFF59C67CFF0000000000000000000000000000000000000000000000000000
+            000054C883C354C883FF54C883FF54C883FF54C883FF54C883FF54C883FF54C8
+            83FF54C883FF54C883FF54C883FF54C883FF54C883FF54C883FF54C883FF54C8
+            83FF54C883FF54C883FF54C883FF54C883C20000000000000000000000000000
+            00004FC98BC54FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC9
+            8BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC98BFF4FC9
+            8BFF4FC98BFF4FC98BFF4FC98BFF4EC98BC30000000000000000000000000000
+            00000000000000000000000000000000000000000000000000004BCB92FF4BCB
+            92FF000000000000000000000000000000004BCB92FF4BCB92FF000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000046CC99FF46CC
+            99FF46CC99FF46CC99FF46CC99FF46CC99FF46CC99FF46CC99FF000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000041CEA1C541CE
+            A0FF41CEA0FF41CEA0FF41CEA0FF41CEA0FF41CEA0FF41CFA0C3000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000
+          }
+          OnClick = spb_CleanClick
+        end
+      end
+      object Panel7: TPanel
+        Left = 311
+        Height = 582
+        Top = 0
+        Width = 720
+        Align = alClient
+        BevelOuter = bvNone
+        ClientHeight = 582
+        ClientWidth = 720
+        TabOrder = 3
+        object PageControl1: TPageControl
+          Left = 2
+          Height = 578
+          Top = 2
+          Width = 716
+          ActivePage = tbs_Ayat
+          Align = alClient
+          BorderSpacing.Around = 2
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = tpBottom
+          object tbs_Ayat: TTabSheet
+            Caption = 'Ayat'
+            ClientHeight = 551
+            ClientWidth = 708
+            object Panel9: TPanel
+              Left = 0
+              Height = 249
+              Top = 302
+              Width = 708
+              Align = alClient
+              BevelOuter = bvNone
+              ClientHeight = 249
+              ClientWidth = 708
+              TabOrder = 0
+              object GRDJummalAyat: TRxDBGrid
+                Cursor = crHandPoint
+                Left = 0
+                Height = 244
+                Top = 5
+                Width = 708
+                ColumnDefValues.BlobText = '(blob)'
+                TitleButtons = False
+                AutoSort = True
+                Columns = <                
+                  item
+                    Alignment = taCenter
+                    MinSize = 8
+                    MaxSize = 160
+                    Title.Alignment = taCenter
+                    Title.Orientation = toHorizontal
+                    Title.Caption = 'Kode'
+                    Width = 138
+                    FieldName = 'ida'
+                    EditButtons = <>
+                    Filter.DropDownRows = 0
+                    Filter.EmptyValue = '(Empty)'
+                    Filter.NotEmptyValue = '(Not empty)'
+                    Filter.AllValue = '(All values)'
+                    Filter.EmptyFont.Style = [fsItalic]
+                    Filter.ItemIndex = -1
+                    Footers = <>
+                  end                
+                  item
+                    MinSize = 8
+                    MaxSize = 160
+                    Title.Alignment = taCenter
+                    Title.Orientation = toHorizontal
+                    Title.Caption = 'Jumlah Kata'
+                    Width = 138
+                    FieldName = 'Jumlah Kata'
+                    EditButtons = <>
+                    Filter.DropDownRows = 0
+                    Filter.EmptyValue = '(Empty)'
+                    Filter.NotEmptyValue = '(Not empty)'
+                    Filter.AllValue = '(All values)'
+                    Filter.EmptyFont.Style = [fsItalic]
+                    Filter.ItemIndex = -1
+                    Footers = <>
+                  end                
+                  item
+                    MinSize = 8
+                    MaxSize = 160
+                    Title.Alignment = taCenter
+                    Title.Orientation = toHorizontal
+                    Title.Caption = 'Jumlah Huruf'
+                    Width = 138
+                    FieldName = 'Jumlah Huruf'
+                    EditButtons = <>
+                    Filter.DropDownRows = 0
+                    Filter.EmptyValue = '(Empty)'
+                    Filter.NotEmptyValue = '(Not empty)'
+                    Filter.AllValue = '(All values)'
+                    Filter.EmptyFont.Style = [fsItalic]
+                    Filter.ItemIndex = -1
+                    Footers = <>
+                  end                
+                  item
+                    MinSize = 8
+                    MaxSize = 160
+                    Title.Alignment = taCenter
+                    Title.Orientation = toHorizontal
+                    Title.Caption = 'Jummal'
+                    Width = 138
+                    FieldName = 'Jummal'
+                    EditButtons = <>
+                    Filter.DropDownRows = 0
+                    Filter.EmptyValue = '(Empty)'
+                    Filter.NotEmptyValue = '(Not empty)'
+                    Filter.AllValue = '(All values)'
+                    Filter.EmptyFont.Style = [fsItalic]
+                    Filter.ItemIndex = -1
+                    Footers = <>
+                  end                
+                  item
+                    MinSize = 8
+                    MaxSize = 160
+                    Title.Alignment = taCenter
+                    Title.Orientation = toHorizontal
+                    Title.Caption = 'SDG'
+                    Width = 139
+                    FieldName = 'SDG'
+                    EditButtons = <>
+                    Filter.DropDownRows = 0
+                    Filter.EmptyValue = '(Empty)'
+                    Filter.NotEmptyValue = '(Not empty)'
+                    Filter.AllValue = '(All values)'
+                    Filter.EmptyFont.Style = [fsItalic]
+                    Filter.ItemIndex = -1
+                    Footers = <>
+                  end>
+                KeyStrokes = <                
+                  item
+                    Command = rxgcShowFindDlg
+                    ShortCut = 16454
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcShowColumnsDlg
+                    ShortCut = 16471
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcShowFilterDlg
+                    ShortCut = 16468
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcShowSortDlg
+                    ShortCut = 16467
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcShowQuickFilter
+                    ShortCut = 16465
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcHideQuickFilter
+                    ShortCut = 16456
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcSelectAll
+                    ShortCut = 16449
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcDeSelectAll
+                    ShortCut = 16429
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcInvertSelection
+                    ShortCut = 16426
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcOptimizeColumnsWidth
+                    ShortCut = 16427
+                    Enabled = True
+                  end                
+                  item
+                    Command = rxgcCopyCellValue
+                    ShortCut = 16451
+                    Enabled = True
+                  end>
+                FooterOptions.DrawFullLine = False
+                SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+                SearchOptions.FromStart = False
+                SelectedFont.Color = clBlack
+                OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgFilter, rdgAllowQuickFilter, rdgWordWrap]
+                Align = alClient
+                AutoFillColumns = True
+                BorderStyle = bsNone
+                Color = 16120830
+                DrawFullLine = False
+                FocusColor = clRed
+                SelectedColor = 13626618
+                DataSource = DSAyatJummal
+                FixedCols = 0
+                Flat = True
+                Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+                PopupMenu = pmAyat
+                ReadOnly = True
+                Scrollbars = ssVertical
+                TabOrder = 0
+                OnCellClick = GRDJummalAyatCellClick
+                OnDrawColumnCell = GRDJummalAyatDrawColumnCell
+                OnDblClick = GRDJummalAyatDblClick
+                OnTitleClick = GRDJummalAyatTitleClick
+              end
+              object Splitter3: TSplitter
+                Cursor = crVSplit
+                Left = 0
+                Height = 5
+                Top = 0
+                Width = 708
+                Align = alTop
+                ResizeAnchor = akTop
+              end
+            end
+            object GRDJummalSurat: TRxDBGrid
+              Left = 0
+              Height = 302
+              Top = 0
+              Width = 708
+              ColumnDefValues.BlobText = '(blob)'
+              TitleButtons = False
+              AutoSort = True
+              Columns = <              
+                item
+                  Alignment = taCenter
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Surat'
+                  Width = 138
+                  FieldName = 'Surat'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Jumlah Ayat'
+                  Width = 138
+                  FieldName = 'Jumlah Ayat'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Jumlah Kata'
+                  Width = 138
+                  FieldName = 'Jumlah Kata'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Jumlah Huruf'
+                  Width = 138
+                  FieldName = 'Jumlah Huruf'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end              
+                item
+                  MinSize = 8
+                  MaxSize = 160
+                  Title.Alignment = taCenter
+                  Title.Orientation = toHorizontal
+                  Title.Caption = 'Jummal'
+                  Width = 139
+                  FieldName = 'Jummal'
+                  EditButtons = <>
+                  Filter.DropDownRows = 0
+                  Filter.EmptyValue = '(Empty)'
+                  Filter.NotEmptyValue = '(Not empty)'
+                  Filter.AllValue = '(All values)'
+                  Filter.EmptyFont.Style = [fsItalic]
+                  Filter.ItemIndex = -1
+                  Footers = <>
+                end>
+              KeyStrokes = <              
+                item
+                  Command = rxgcShowFindDlg
+                  ShortCut = 16454
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowColumnsDlg
+                  ShortCut = 16471
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowFilterDlg
+                  ShortCut = 16468
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowSortDlg
+                  ShortCut = 16467
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcShowQuickFilter
+                  ShortCut = 16465
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcHideQuickFilter
+                  ShortCut = 16456
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcSelectAll
+                  ShortCut = 16449
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcDeSelectAll
+                  ShortCut = 16429
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcInvertSelection
+                  ShortCut = 16426
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcOptimizeColumnsWidth
+                  ShortCut = 16427
+                  Enabled = True
+                end              
+                item
+                  Command = rxgcCopyCellValue
+                  ShortCut = 16451
+                  Enabled = True
+                end>
+              FooterOptions.Color = clInfoBk
+              FooterOptions.DrawFullLine = False
+              SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+              SearchOptions.FromStart = False
+              SelectedFont.Color = clBlack
+              OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgFilter, rdgAllowQuickFilter, rdgWordWrap]
+              FooterColor = clInfoBk
+              Align = alTop
+              AutoFillColumns = True
+              BorderStyle = bsNone
+              Color = 15662068
+              DrawFullLine = False
+              FocusColor = clRed
+              SelectedColor = 13429966
+              DataSource = DSSuratJummal
+              FixedCols = 0
+              Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+              PopupMenu = pmSurat
+              ReadOnly = True
+              Scrollbars = ssVertical
+              TabOrder = 1
+              OnCellClick = GRDJummalSuratCellClick
+              OnDrawColumnCell = GRDJummalSuratDrawColumnCell
+              OnDblClick = GRDJummalSuratDblClick
+              OnTitleClick = GRDJummalSuratTitleClick
+            end
+          end
+          object tbs_Nash: TTabSheet
+            Caption = 'Nash'
+            ClientHeight = 551
+            ClientWidth = 708
+            object pnl_Page: TPanel
+              Left = 0
+              Height = 551
+              Top = 0
+              Width = 708
+              Align = alClient
+              TabOrder = 0
+            end
+          end
+        end
+      end
+    end
+  end
+  object Panel6: TPanel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 1393
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 32
+    ClientWidth = 1393
+    Color = 15922159
+    ParentColor = False
+    TabOrder = 1
+    Visible = False
+    OnClick = Panel6Click
+    object spbStat: TSpeedButton
+      Left = 4
+      Height = 24
+      Top = 4
+      Width = 122
+      Align = alLeft
+      BorderSpacing.Around = 4
+      Caption = 'Sebaran'
+      Flat = True
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        200000000000000900006400000064000000000000000000000007C2FFE007C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C2FFE0FFFFFF00FFFFFF00FFFFFF0050AF
+        4CE050AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CE0FFFFFF00FFFFFF00FFFF
+        FF00F29621E0F39621FFF39621FFF39621FFF39621FFF29621E007C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C1FFFF07C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C1FFFFFFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FF07C2FFE007C1
+        FFFF07C1FFFF07C1FFFF07C1FFFF07C2FFE0FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F39621FFF39621FFF39621FFF39621FFF39621FFF39621FFFFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00F29621E0F39621FFF39621FFF39621FFF39621FFF29621E0FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0050AF
+        4CE050AF4CFF50AF4CFF50AF4CFF50AF4CFF50AF4CE0FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = spbStatClick
+    end
+    object spbJummal: TSpeedButton
+      Left = 130
+      Height = 24
+      Top = 4
+      Width = 147
+      Align = alLeft
+      BorderSpacing.Around = 4
+      Caption = 'Jummal'
+      Flat = True
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000005221
+        1C9C51211CCC51211CCC51211CCC51211CCC51211CCC51211CCC51211CCC5121
+        1CCC51211CCC51211CCC51211CCC51211CCC51211CCC51211CCC51211CCC5121
+        1CCC51211CCC51211CCC51211CCC51211CCC51211CCC51211BB4000000005121
+        1CCC000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000511F1C8B511F
+        1BEB000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000004F1E182A5120
+        1BD6000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000005121
+        1CCC000000000000000000000000000000000000000000000000000000000000
+        000000000000425EFF1B455CFF7D4060FF100000000000000000000000000000
+        0000000000004055FF0C465DFF0B000000000000000000000000521F1C5A4F24
+        20E720BFFF080000000000000000000000000000000000000000000000000000
+        000000000000455BFFAE455BFFFF455AFFD94659FF2800000000000000000000
+        0000445AFF22455BFFE1455BFFD54D66FF0A0000000000000000521F1C5A4F29
+        27ED25CAF2B140BFFF0400000000000000000000000000000000000000000000
+        0000475AFF41455BFFFF455CFFC0455BFFF5455BFFF0455AFF4A00000000445A
+        FF22455BFFE1455BFFFA455BFFFF465CFF960000000000000000000000004E2E
+        2DDE25CAF2FF24CAF29B00FFFF010000000025CAF26126CAF1A940BFFF045555
+        FF03455BFFD0455BFFEF4059FF14455AFF30455BFFE1455BFFFC465BFF84455B
+        FFE1455BFFF7445AFF47455BFFA3455BFFFE465BFF4C00000000511F19295120
+        1BD625CAF29F25CAF2FF24CAF28625CAF33E25CAF2F925CAF2FF25C9F276465A
+        FF66455BFFFF465AFF7100000000000000004059FF14445BFFBE455BFFFF455A
+        FFF8465BFF4C000000004455FF0F455BFFE0455CFFEA4060FF1850211B8C511F
+        1BEB33CCFF0525C9F2B525CAF2FF25CAF2F625CAF2E525CAF3CD25C9F2F7406C
+        FDEC455AFFD95555FF060000000000000000000000005555FF06455AFF774459
+        FF3C000000000000000000000000445CFF40455BFFFD445AFF7F000000005121
+        1CCC000000001CC6FF0925C9F2C325CAF2F726CBF13628CCF42D25C8F2FC2DAE
+        F5FF455CFF4E0000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000475CFF3D4060FF18000000005121
+        20D0000000000000000024DBFF0724C8F61C000000004257FF233594F8FC25CA
+        F2FF24C9F2630000000020CFEF1025CBF27525CAF2B123C5F316000000000000
+        000000000000000000000000000000000000000000000000000050201BB55121
+        1FF9455BFF984040FF04000000000000000000000000455BFFAE445FFFFB26C8
+        F2DD26CBF2EE24C9F39325CAF2F225CAF2FF25CAF2FF26CAF2A3000000000000
+        0000000000000000000000000000000000000000000000000000000000005025
+        2EDE455BFFFF465BFFBB4060FF1000000000475AFF41455BFFFF465CFF9626CC
+        F23C25CAF2FD25CAF2FF25CAF1BB26CBF14A26C9F2A225CAF2FE27C9F3420000
+        0000000000000000000000000000000000000000000000000000000000005121
+        1CCC455AFF77455BFFFD455BFFDA4659FF28455BFFCC455BFFEF4059FF140000
+        000024C9F14727C8F42E000000000000000023C5F31625CAF2ED25CAF2D724DB
+        FF0700000000000000000000000000000000000000000000000050201BB55120
+        1BF500000000455CFF59455BFFF7455AFFF8455BFFFF465AFF71000000000000
+        0000000000000000000000000000000000000000000026CBF36625CAF2FF25CA
+        F37C28C9F21324C9F27726C9F2B026CCF2140000000000000000000000005121
+        1CCC00000000000000004359FF39455BFFE9455BFFD75555FF06000000000000
+        0000000000000000000000000000000000000000000000FFFF0225CAF2C625CA
+        F2F825CAF2F625CAF2FF25CAF2FF25CBF2890000000000000000000000005121
+        1CCC000000000000000000000000435EFF134755FF1200000000000000000000
+        000000000000000000000000000000000000000000000000000027C8F42E25CA
+        F2F125CAF2B225CBF04525CAF2C025CAF2F423C5F31600000000511F1C8B511F
+        1BEB000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000026CCF23C25CAF2FF25CBF289000000004F1E182A5120
+        1BD6000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000025CAF2BF25CAF2F423C5F316000000005121
+        1CCC000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000025CAF33E25CAF2FF26CBF27A521F1C5A5020
+        1BE1000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000024CAF36A24CCF032521F1C5A5020
+        1BE1000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000005020
+        1BB5000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = spbJummalClick
+    end
+  end
+  object DTHuruf: TZTable
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTHurufAfterOpen
+    TableName = 'v_jumlah_huruf'
+    Left = 475
+    Top = 96
+  end
+  object DSHuruf: TDataSource
+    DataSet = DTHuruf
+    Left = 472
+    Top = 160
+  end
+  object DTKata: TZTable
+    Connection = frm_Main.Koneksi
+    SortedFields = 'jk'
+    SortType = stDescending
+    AfterOpen = DTKataAfterOpen
+    TableName = 'v_jumlah_kata_arabbasic'
+    IndexFieldNames = 'jk Desc'
+    Left = 475
+    Top = 335
+  end
+  object DSKata: TDataSource
+    DataSet = DTKata
+    Left = 468
+    Top = 222
+  end
+  object LCHuruf: TListChartSource
+    Left = 550
+    Top = 96
+  end
+  object DTChartSource: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 634
+    Top = 96
+  end
+  object LCKata: TListChartSource
+    Left = 626
+    Top = 150
+  end
+  object LCKatBasic: TListChartSource
+    Left = 626
+    Top = 223
+  end
+  object DSKataByStat: TDataSource
+    DataSet = DTKataByStat
+    Left = 717
+    Top = 326
+  end
+  object DTKataByStat: TZQuery
+    Connection = frm_Main.Koneksi
+    SQL.Strings = (
+      'select distinct kata ,arab,plain,count(kata) as jkata from v_kata_bystatistik where basic= :v_basic'
+      'group by plain'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_basic'
+        ParamType = ptUnknown
+      end>
+    Left = 621
+    Top = 326
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_basic'
+        ParamType = ptUnknown
+      end>
+  end
+  object DTSuratJummal: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTSuratJummalAfterOpen
+    SQL.Strings = (
+      'SELECT '
+      'n.sura_mushaf_order as `surat`,'
+      'count(aya_no) as `Jumlah Ayat`,'
+      'sum(n.aya_words_count)  as `Jumlah Kata`,'
+      'sum(n.aya_letters_count) as `Jumlah Huruf`,'
+      'sum(aya_jomal) as `Jummal`'
+      ''
+      'FROM quran_hafs_numeric n'
+      'GROUP BY'
+      'n.sura_mushaf_order '
+      ''
+    )
+    Params = <>
+    Left = 139
+    Top = 421
+  end
+  object DSAyatJummal: TDataSource
+    DataSet = DTAyatJummal
+    Left = 58
+    Top = 478
+  end
+  object DSSuratJummal: TDataSource
+    DataSet = DTSuratJummal
+    Left = 132
+    Top = 480
+  end
+  object DTCariKata: TZQuery
+    Connection = frm_Main.Koneksi
+    SQL.Strings = (
+      'select * from v_ref_kosakata limit 100'
+    )
+    Params = <>
+    Left = 190
+    Top = 170
+  end
+  object DTKataJummal: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTKataJummalAfterOpen
+    SQL.Strings = (
+      'SELECT  kata, '
+      'CHAR_LENGTH(trim(kata)) as JH, '
+      'COUNT(kata) AS terulang ,'
+      'getJummalKata(trim(kata)) as JMK ,'
+      'COUNT(kata) * getJummalKata(trim(kata)) as TJMK'
+      'FROM quran_hafs_kata WHERE ids= :v_nos'
+      'GROUP BY kata'
+      'ORDER by id asc'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_nos'
+        ParamType = ptUnknown
+      end>
+    Left = 226
+    Top = 418
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_nos'
+        ParamType = ptUnknown
+      end>
+  end
+  object DSKataJummal: TDataSource
+    DataSet = DTKataJummal
+    Left = 224
+    Top = 478
+  end
+  object DTHurufJummal: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTHurufJummalAfterOpen
+    SQL.Strings = (
+      'SELECT h.huruf, r.nilai, count(ids) as terulang, sum(r.nilai) as jummal '
+      'FROM '
+      'quran_hafs_huruf h'
+      ''
+      'INNER JOIN'
+      'ref_jummal r ON h.huruf=r.huruf'
+      ''
+      'WHERE ids=:v_nos'
+      ''
+      ''
+      'GROUP BY'
+      'h.huruf'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_nos'
+        ParamType = ptUnknown
+      end>
+    Left = 311
+    Top = 419
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'v_nos'
+        ParamType = ptUnknown
+      end>
+  end
+  object DSHurufJummal: TDataSource
+    DataSet = DTHurufJummal
+    Left = 314
+    Top = 479
+  end
+  object LCJummal: TListChartSource
+    Left = 550
+    Top = 154
+  end
+  object DTAyatJummal: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTAyatJummalAfterOpen
+    AfterScroll = DTAyatJummalAfterScroll
+    Params = <>
+    Left = 57
+    Top = 419
+  end
+  object DTGet: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 550
+    Top = 220
+  end
+  object icobuku: TImageList
+    Left = 805
+    Top = 333
+    Bitmap = {
+      4C7A160000001000000010000000901B00000000000078DAED9C07585547FA87
+      CF955EA54BAF8A60A5370129D23B040B88A08214355163624FC468D4448DD144
+      5D4D34F62E1A634D8C9B6CB231C692A2520595AAA028160494DFFF9BCB012F70
+      2E464C76B3FBDFFB3CEF337367E63D3377CECCB9F329C0717FDCCBD55D0E36FD
+      64B07EA3012E17DAE0E2256B9C272E4870BDCA16527D0F79F4B595C1476B7571
+      F1174B9C396B811FCE9A8BD3560A8A7AC3C94951F01A43BCE5D17F902CD6ADD7
+      C16F974D71EE8209612A81098AAF99C3C14141D0F7F553809DBD2C366CD4465E
+      81117EF9CDB013A5E52670749217F4FD0314E0E024874D9BB550544C7390ABCF
+      F32C5F75CB104ECEC27E70A8225CDC15B0759B26AE97EAA1A050973EAF5E0B94
+      CF2FD4C3EDDA5E70719113F423A214C1E660E72E0D545468A3A4448B904CB551
+      57A70B1757613F264E09437D15B0776F4F54DFD440E9F56794F1D43FD4849B9B
+      ACA0FFCA0825F80E53C4FEFDEAA8AD56436559679A1AD5E1EE2E23E88F485086
+      7F90220E1C50436D8D32AACA55DA5159A60234A9C2C3A387A03F6AB40A028295
+      68FC2AA8AE52A0712BB6E306D1FC44115E9E22413F314905FE81CAD8B65D1937
+      4A645190D79EFC5C59343D9683BF9FB09F91A58AA858151C3BA684867A0E7577
+      45EDB877470440045D5DE1F11B19C9404F4F06F6F6220CF3E7E0E7DB9EC0004E
+      AAFB5778F5313080A1961626878462434606D6A4A511A95893CA43F96DAF4EC6
+      F3FCF48040AC1A3B1ECBC7244B90224EFF3621037DF4F505AF616B6404131D1D
+      6404066135F92BC8E9C87AF22D7BE909FAFD4D4C60AEA787ACA060AC1EC7FCE4
+      4E6C48677E2F417FB09919ACA86E6270303E1A9F8A9529633BF1494626B5111E
+      BFBD8505AC690ED8FC7D9C9A860FC78E6B07F33FCDCC426F299FDFC9CA0A6C0E
+      5E0D0DA3F99E40CEF84E6CCC9A48BE81A0EFDAA70F06D01C4C090BA77B958E55
+      E3523BB1296B92D4FE3DACAD31C8D41453C323B096FCD5D4BE239F654D96DABF
+      675F1B0C363713FB1F4B19FF26B12FDCBFB7AD2DECCCCDC59FFFC394712D6B26
+      4992646CCC9C289E63217FA86D3FB19F19188CF712C7E0DD51A3F1EEC8D12D29
+      B1686422ADBF4C9A6363413F68B01DDC680EA7474489E79FAD61493E4C198F7D
+      D3DE80BAB2B2A0AFA5AA8A9E54674A6BD886EE635FC3F6F43336869A14F7AFF0
+      D2E9DF1FEA74FFDDDE7A0B5187BF40C4FE03086F470EE24E9DC6F37CA7993310
+      B2671702B76D692368DB56620B220E1F8256FF7E82D7D0B1B38386A5259C66CF
+      44F05EF2776CED44F81787A0696323E8EB39384093EE9FF39CD908D9B787DA6F
+      27B6F1B4E4238E1C86A6AD14DFC585EA6CE1326F2E42F7EF43F0AE9D9D883C7A
+      049AFD84CF40061E1ED01E3000AE347F6107F62384DA87EC9680DE471D3B0A2D
+      29BEA1971774D91ACC7E1B6139FBDABB3CD1C7A5FBC63E3ED0737484FB82F908
+      3FB897EEC10E31A112449F3822D53719E68F5ECE2E705F982DF643F7EEE844F4
+      9747A5DE3FD3C040F4727585FB3BD9F4F9F7D078B77722FA24F5DF5FB87F537A
+      EEEABBB9C135FB2D04EFA1FBB57D73073E43E4F12FA04DEB4CC8370B09412FF2
+      9D69FD0CDBFC09FC3E5DD79E4FD622FC700ECDF16041DF2A2E1646BE3EF058BC
+      88E69FE66F2FCDF99E9D2D2911BC7B07869FF90E0A3D7B0AFA4ABABA50D0D444
+      4F7A8EEB0C1E049D4103DAA16B37188A52DCBFC24BCEDC1D32BDFAC12079236C
+      1615C23AFB12ACE7B7C7765995D4F1CB5B78906F0BDDC4B5B0CCFE051673CFC2
+      9CB098F78CDE4B8AA068EE24780D792B6FC81A0C84CEE8F530CDBE0C93791760
+      2A017B6FBEE41A144C1D047D056B3FC81ADB437BCC4618BD5300C3B77EEB84C9
+      D272C89B09F7AFD0370072264ED04ADE0C8385C5D09F9F2BC6804F1986EFDF22
+      DF59D057EC170A057337688EDD0EBD45A5D0CD2E821E4F4BBE10BD96D542CEDC
+      45D81F1805794B2F68A4EE86F6924A682DBC066DA23565E87EF0007216AEC2EB
+      6F701C147AFBA2E7847DD058560D8D2565D0582C01BDD75CFD18B2166EC2BEFD
+      08285A0F837A7A0ED496D7428DC6D011F5D54F2063E12EE82B3B2640B16F20D4
+      26E440F9FD5AA82CAEEA4025543F067A587A08FA2ACEA3A164130C95D47D5058
+      7C0B8AEF94427161694B2AE6061457374364E525ECBB2441D92610CA29DB219B
+      7D1DB2F30A3A900FB9954D1059FB0BFAAADE5950191C0BA5ACE3E0963740B4B4
+      AE03F720DA4CE357D315F465348C20A3A60711AD418EE691EBE3D71E9A1B69EE
+      5FE16540F1BF16C5FFE114FF4FA2F83F93E2FD742243229DDA45FC6F40F1BF16
+      C5FFC114FF6750FC9F4AF17E2AC5FF6994A689F316984CF1BFA194F8DF88625F
+      9D81B208A1F83F9DE2FF348AF7D32E984A6082C914FFEB4B89FF4D29FED7A3F8
+      3F94E2FF0C8AFF5329DEEFC8648AFFF5A5C4FF6614FFEB51FC1F46F17F06C5FF
+      6914EFB7F02CFF2AC5FFFA52E27F0B8AFFF5DD1410BE5D139914FFA715E9127A
+      3C94A7F8FF558AFFF5A5C4FF5614FF1B79C92372B706B22AB5917E8D62A96B92
+      A936A63CD085A194F8BF0FC5FFC614FF47EFEB8949D51AC82CEBCCB4C79A3090
+      12FF5B53FC6F4AF17F4C8E3A26D7AAD1183A33ED893A0CA4C4FF3614FF9B052A
+      223A470D136B959151A5D29E4A154C832A0CA5C4FFB614FF9B53FC1FB94F05E9
+      B714905AAA883422B5951B8A98D2CCE648387EEF4FF1BF39C5FFA114FF8FBB2E
+      8BE482F68CC997C5E4263998F80BFBF614FFF7A1F83FE6B812B21A38A4D789DA
+      734F845914FF2B4B89E15529FE57A6F85F97E27FE3611C8CFDDA6312C84975FF
+      12AFA1DEE0060E80E8C821F4C053F478FC00A2C78FD0A3E11144AD00E8D2A7F3
+      AF68DF4E70F7ABC15597F2DC7896A21E9CF710E16B04D033D3C11EA203BBC13D
+      20BFA6AC33780CCE5DF8FB8B0B0902E7E204119D5DB987B7C1DDA90077BBBC85
+      D63C1AC17948F123C2A9CE03A2C3FBC1D5D782BB4B679DDAAA96B4153C013744
+      F8FB8F8B8D01377428CD5F0EB8C6BBE0EE557586E695F314FEFEE3468E00376C
+      1844C70F914FFDDFAFEA0CEB5F9A9F341A1C9D8145273F07F7E40ECD614567D0
+      24DD1F9B022E2202A2AF0E837B4AFEC3CACE74D57FEA787051512D7E23DDBFBA
+      B2CEB0F9F792327FE969E06262203A96D3D2B6FA6A67D8FA192A65FD64A6838B
+      8E862887D65F791EB8925FDB53FC0BF9F7688E870AFB33A6834B4A84E89BE32D
+      E37F50DE1EF1F8E9FB5F5747D837350167A00FCED18EFAF001E7E7DD9E403FE9
+      EE5FE0A528E70639191B98187C8AC136051868FD5B1B03C4E925D8D9564A1DBF
+      A27C8B6FA0FB31FA5AFE0C6B8B1F616DFE23FAB094C7B67721941585CFDF8AF2
+      5E90971D007D9DBFC1CAF4122C4DCE53DA82254BE9BDB57909141584CFFF4A0A
+      BEE4DBA197F6A73037CA8799E1AF9DB034298382BCA3F0F95521008A724ED0D5
+      DA0C63836218E9E78A3136E053C2D4F016F9C2E77F15C5101A9B1B7434B7C140
+      EF06CD4321A52DE8F379A35E77202FE722C58F8492BC27B43576414FBB92C651
+      42E93571AAABDD92EFA5739F7CE1F3BFAA521C94690EB47AEE8396463551D609
+      6DCD7AC8C90A3FFFD494464045711834D573D053ED0E51D9094DF527909511DE
+      BFAACA09E40751BB1CA82ADF81AA4A65072AA0A6DA8C1E3D849F1FEA2AA3A1AA
+      140475957D348FD550522C15807C9197143F096ACA81D4379DFF65AFD3E72CE8
+      403ECD5D234422E1F37F4FD54CEA3B062A4AC7A8FE31B5BBD781BB04EDFF1E52
+      CEFF3274FE97A1F3BF88CEFF1C7D97717E1D0894EAFE155EEEB4AEFAD1FEDD68
+      B01E85369771C9FA22719EB8D04695ED75A9E377977785AD4C5FACD5FD08BF58
+      5EC4598B33386BFE434BCA53D4BB00CE52F6BFB7FC100C92ED8FF53AEB70D9F4
+      375C3039870BA612D0FB6BE6C57090B2FFFD68EDDBD3FEDFA8BD01054679F8CD
+      F0974E949B94C249CAFE0F50F087939C03366B6D42B1411172F52FB76070B92D
+      7FCBB00ACEF2C2E30F550C86BB820BB6696E45A9DE7514EA16A048AF05962FD4
+      CBC79D5EB7E12265FF47294680CDC12E8D9DA8D0AE4009EDFB12DAF76D2951A7
+      5B075729FB3F4E2906BE0A43B1B7E75EDCA4FD7F5DA3548232310F69FFBB49D9
+      FF23945EC130455FEC57DF8F6AB55A94D17EEF48A37A13DCA5ECFF04E5110852
+      F4C701B503A851AE45B94A553BCAE819D0A40A78F410FEFE1EAD320AC14A01D8
+      ABB21755B4FFAFD37E6FCF0D3CA1FDEF2965FF27A9242250D91FDB95B7A144F6
+      06F268CF4B924BFBFFB15C13FCA4ECFF2CD50CC4AA44E118EDFF7AAE01774575
+      EDB843CF007600D695B2878D68FFEBD1FEB7A7FDEF4FFBDF97F6BC2401B4FF75
+      FFE0FDCF8EE392FC7385B152C7B2DF53D7CA856CD3775FA4EED7C5A69A791FB8
+      2C295835E410E3B725B605ADF98E48D63187B985ABBD8F367EBB02F8718398F2
+      AD23DBF21D91AC630E73AF7D125924D9E6C189F952FD8E75CCBDFE4964B1B4F6
+      CF83B9BFBEDB37B760B5F789EEC05C9AD325CFBB275DDC8F25FFF3FFBDFEF96C
+      93B1E71798BE796181C9C8178139CC6DDD4317E79BDBBD08CCE92A148FDD1F39
+      243A27FC3E51177320DCFD459F2BD13961AF938B16C25E7F513FEA60C4F4569F
+      E5FF5B7D36CF5107C3667426FCC8333FFC88709B300FFE1EA19BD4F174D7BFC7
+      D64677C71FBB3FC2EDFFFBFDFFF3F68F786DB07B7BAFAB7976F57B90E4E2FFE0
+      368117E4B6B3FF83C46EBAADD4BC84FBA73134FCE1EF2A13C227E221EAEB1BB1
+      FCA3FAB632966765BFF71ACBA87D63632356FFADBE5DFE453E03EBB3A1A1518C
+      E458FE15FECB8CFF8F98BF97B97FFF065E6AFFF07BB0A65B7B6FD88384E89C88
+      247A46DCEEC6B3FF363DFB13BBE9B652F312EE7F14E9275271B6FC478C3B96DC
+      2DB7B2AE12B9D55730FCF3D82EDBCEFDC72CACFF799DA09BF8C588E7F6B5F0FB
+      6CDAF30DD87D65E70BBBAD7C707699F81A758FEA5ED86D65D9D9F7F0DD8D6FBB
+      E5FE87F152FB87DF83DDD94735742E49189F129F303B2BAEE2BD293158FA5A34
+      96BC1A897727856151562816660663417A20B2D386617EAA1FDE1AE7837963BD
+      3137D913E9F19EA59161DEB1B3B2E2CBAB3E0DC2AD4F0371F39361B8B9C10F37
+      D7FBE0E6DFBC51B5CE13556BDC0937547DEC82CAD58EA85C658FCA0FED50FEC1
+      408C8FF5B831697CDC773F7D108AAB6B0371754D008A3EF243D16A1F14AD1A8A
+      C20FBD50B8D203851FB8A160852B0A963921FF7D07E4BF678F7FBC6D87F8508F
+      5363E2C38D52126316A78C8ED9939C10BD67F4C888DD8923C27725C487EE1AF5
+      4AC8CEE131813B5F890ED81117396C476C84EFF6E8F0A1DB69DCDBC2033DE787
+      FA38EB773776FBA348498C709B901475ECD59488824963C2F2272685E4678D0E
+      CECF480CCA4B1FE59F973ADC2F2F35DE37776CDCD0DC9458CFDCE418CF2B4951
+      EE576283DD0E8505BA3ABE363EEA72C91AFFF673BED6A36DCEAB3E72A2797710
+      CF79E5CA41A8FC60002A56D8A270B12D46853BFFFCEAB848F2F97BB6CE8BDC21
+      2DF7EC6357729D25EED960F20792DF5FEC172CB6C1A830C79F9392A25CC72746
+      1C6563CFA2B167D2B8331202F3268CF0CF4B1BE19B9B1AEF4363F7CE1D4BE31E
+      13ED211EFBE870D72BD1812E0783FC1C1DFEDDF33F3232C0306178D8A291F121
+      BB46BC12CCAF9761B45EFCC4EB252ACC675B6488D7B6F0E021DBC2023DB6060F
+      73DF12E4E7B225C8D7799EBFEB805EA98961DF9C59EA436BD5F3D95A5DEE22B1
+      56ED90BF7410F2960C40DEE27EC85D6483DC85D6F8FB2C6B44F8D99D9C92125A
+      56B956FA3E919CF38AE57D51B1AC0F2ADEB742E9524B24860CBE366A78E8F029
+      C90165AD7BF4EDF1BE6D7B74CE98219835DA0D33135D31639433DE18E180E9C3
+      EDF1FA2B8391143AF0BAAF975DD41F318753A6A468C44685EFF4F2F4C8777371
+      BADE15AC0D6BCB1CE64E9A34C1C6C17EF0C3E9D326E3C7EF4FA128EF6297B036
+      AC2D73983BC4C3ADE8B34FD73CD7EB0873986B6737A8A130F742E7FA4D87BAF4
+      99C3DCB0D020C17A39793DF41F3802A7BFFA56EA35982BCDD7EA158701AE67A0
+      DD2B0013329677CB179FF3FCEA606ABD141656E138FDF53F5ECEFFEA9B7FD9F8
+      7FEFFCBDECFD7BD9F5F3B2EBF765F7CF7F035E11A3E37CA2933FF78D49FE81F2
+      A7DC8247AC32B0F7336BAD67792A5FE3133DE6EFFEB1293FFAC5241FF6084D10
+      3FBB4CDC86FF60EB1D53F3A8BE1EECD5D4D484FCAB25489E34F3BA9D7FEC5297
+      A011CB53A7CE2D2B2CBE2EAE632FD6D6C62BBA9AB99601D36EF827CDAB82C06B
+      EDA69DF5EB36EF6A10AAF31C39E32673BBF28F9DFA8798FFF97FAE3F24E9FDEA
+      B0E4D7ABC2526654C6A6CEAC4C9DB6A06A67CED1079F9FF81A078F9DC2F6FD5F
+      3C487D3DFB26AB0B4B99591939F6CD4AB7C4A5D5CCB5F09B54DE3FED04FA442D
+      B9C7F216FE137F32F34C3A6FE2107CC7CCDEAFD1C4CEB7499CF71A73C1C27FF2
+      594BFF49657DA2DFBFD77FC249B0F6262EB139662EF1E30D1D1D953BAE6B4747
+      473946C7726377772533D7E1E34C5C620EFE15F723FB518C9E0666B90C96EF86
+      1F133E6BDD1306CB77C31FF9CABB3BC160F997F11554D4BFD234E9FD2E95F5E8
+      8E6F1737E9B1737CD643654DDD724D63CB4B54E7C27E54F6F7FAC1D92DA9FF9B
+      EB9EB2F9D0B11A50A76F3DF80EB5E9F7227EC7B4AB7969F547AF3A86D815C73A
+      A51D7DF6A32B1A8616F9067DED0BE89E2FA4F7E3589BF9E7208880EFE6993CA3
+      96D58D5AF17993B669EF2AD6D7EFF5191AFAA68787BF77E0A134E779BEF8C7E7
+      7FE735E2166E7BCA7E5D5960DE7ED735DC13A6DEA2B603A4CC7D97D798F3DD43
+      E85AF62B60EDBAB87F323D0DCC77B8254CAD9EF743439B3BFD64152C9CFD2A95
+      D4343D7FCF3A5656D309D731B7FDD178907B81F140B77C1DB3BEA7E9DABDA5B5
+      6F6E6EE69A297DDAF49873ED6FC425457872CA1C679D14E6ACE86967C9EDDFBE
+      5EDCAEA9B151D07FFAF4A9D87F42BEF7403DCE4C4BB46AF58A25F071EAD3FC4A
+      A093E3F8E101D4AE997BF2B4597AFFCD946F6EE2BC06E872469A32AB1A1A1B70
+      68EF56986BA922C4CD8A6B6A6AE41A1A9B286DA1C569A1B1A1419C9E3ABC83EB
+      A528CB5919AA6FA9BE59817F7EFB1574643924F95B3F7FFF373FE5C2BD07713D
+      451C979648478CE6A758B1680EB415E51A6387987307F76CE13EDFB3993BBCF7
+      336ECB86D5DCBD078FB9FB0F1BB8BB750FB947F50DDC8983DB38432511D7474F
+      F695D35F1E25FF0912E242A1C57187FAE8709C2E5DB707DD044D22D0AD0F17E4
+      6CC0790FD6E77CECF439FBBEFA9CBE4E4FCE42951677840F1E3FBA8F87F7EFE2
+      D09E2D5838670A96BF33032B16CEC49A65F391322A069E038C9B2D35B907BEF4
+      B182FB7108B0E160ADC7414351F6D4892FF6A2B1E1116E575751CACE464FC59F
+      E5C99346F1F7E7AFE7BF8702C7C1CE84C381C9228A477BE0FC0279CC0BE63029
+      7DACB87DCDAD0ADCBD538DDADB37C5D7B943DCAA2C43E3E38758B372298CE439
+      389A71D83B518453337AE0CCDBF2984DB7387BD65434D3E766FEBDDA1AF1355A
+      D33B3555F4B91EE0CCB75F42478E838329F339F245E4CB89FD796FBC2AF66F57
+      57B6B9AD7E6DCD2DD43FB88B51D101E8AFD9D2FFBE49227C2DEE5F0E730239CC
+      9D3E194FE97356DF2CA7B1DF7A464DCBE7B8577B1B31012E7032E04EB0FE7767
+      71F8F24D11FEF9963C660DE3B068EE74F11CDDA53E1F3EB8D7C6BDBB77A8B419
+      6B562C84BE12D71CD44F3ED8C59CC391A934F6793DF0DBBB72C80EE3303C3612
+      0597CF21FFD205145EF91945B9BF88C9FBED3C6E575EC3E2F933D05B83839F25
+      6D46BA5F0B6239AC4C14616DB20869434530D6944188AB05427D9D11E2E3D446
+      18BDB7B735436F5D19B89B72B73223FB73830CB866E39E1C0CD539E8AB71A035
+      86A136AA57FAF5B5E2FA589A70D612F4B532E50699287001B63D38475D8EBB55
+      79FD0F392F0C0D899A3D342C6687BDABC7486363632D69ED581D6BC3DA328795
+      F5D7EDAF3A2C2EE1CBFDB71AB1E2EB734FD316BC5F163936E3279FF0B87DD436
+      8EC1F2AC8CD5B136AC2D73983BC837A4D4337278E5C15A409203B79FE0B5951B
+      1A182CDFB19E39CCF59E38AB38F2B5D9A51DEB198BBFF8468C501D7398FB3FFF
+      3FDF0FCE9C5E317BCBFEFB1B2F973ED7DF945B8ED99BF7DD0B22A7D59F58588F
+      71DF1763CC8E139563576DCECB5CF549E1F4F5DB6A677CBA0B3337EEC1F40DDB
+      6B333FD85038F6A3AD7949DB4FDC1CF7DD553087B983FCC30E3AC58C3ED111FB
+      E0986F1DBC03CF30585EA80D73FF02B1C260F6A74F8815C47EE23BE224FB715A
+      89367E7CD9777C9B15BCC3DC07C44A228DFD0909C29CFD5802B19BF83BCF6EBE
+      CC9C6FC3DA7EC0BB773B8C475622CFFA592154C7BFBFCBC3BE923F238A89DBC4
+      59F6E72888993C9E7C5935C162A24F79E76E6BFFFC6731E4C768CB7E9B43C237
+      E5CBCCF9368305FA3FCE5FFF2251428449F8617CD945BECD7181FEB5D9AF5012
+      3E7C7FEA12BE3A5FE6C3B7D116E8FF27228FC8E1E72141C24FE0CB72F8363F75
+      ECBFC3BCB6FE9A97D8972C9332FF0AECD7E788787E5D8C61BF8E21D1BF125F96
+      C1B7B1E71DE63613EC3CFE2DB186984DAC230AF971FEC4E7D7F1756BF8B6B778
+      975DC388F02292896C2285FD3903E2108F095F96CDB7F1E21DE65EE0D7C676E2
+      1D6202B195F881FD4838CF0F7CD904BECD76DEB9D0C5BEF2E0D73DC3E34FDCBF
+      7FDCCF12575428E3CE554FDC2E8C27FAB595535E5CC6EAA84D3BA7E4B422AE7D
+      5D839A82CBD4A689401B3585C771FD7459BBB29636978893C069D9CC89D540D1
+      1740F18996B4E8484B7A95D29A024A8FB6E425EB8A4F8AEB26CFAF7F9491D5EA
+      1FE7DBB4B63BFACC67F956B7B52FE6BF5D8F67FE49095FA2FFA2632DF9AB1275
+      ADFDB7FA8547F8F11F693F864EE3E7CBC5FDE7B7F74B4E76E847A2FFB639E1C7
+      55F2657B9FD5B132C9FE59DBB6FEBF687F5DB1DFE1F3979CE0E7EA48E7F14B96
+      B1F72527057CBAE6D563EDC729397F6DE33A26DC7FD9F740F515F11A69AE29BC
+      DFB65E58FB96B23AF17BD6A6EC9F6D9F7F7CDA2DDC38F7D3FD6FFF5E717EDD67
+      B5C553DFA97F9A31F731662C7EF8A8F097E2DC5BBF9E2DA77C3D2B6375EB3EBB
+      53FCCDE9CA733F7E5F7E31EB2DFADECFBA9B337ED2FD7D99731B66B4635E7D36
+      398F182CDFA99E31E7F194AEF653E6EC86418C3FF377769E3D07E2652C6D134E
+      F619987CDED43441B3E373C2D232BE67EF0163CE590F4A39C571F3DBFD5B9AA9
+      E5487F13ABE19B4767ADFAE5CD0F8FDE31B11CFEB9B1D5889592B0B2392B0E15
+      27BDB1E98E69EF515B8DAC86FB32D7D06AA4C940BB6997478FF8A6C92F7C4E5E
+      D26BEB2AE2A23EAF4B4FB904495859DCD8F78BBC43E7D606FA9E6E1E38786699
+      A165BCA9B1557C7070D0A6A237E839101F7BB434327C4FC1F4AC9B60EF256165
+      1161BB0A7CBD8E3F890AA8C050AFADB5CC95F49FC7D4F46A30B7C5DF76B7D5B7
+      1938AECAD96B5AC9F370F19C76CDD9EBCD4A86CDA0F135ADFEEB0B77169DBBF9
+      14CFE34CE5536CBFF258CCA477F7DFFDB3FD5379B598F5FE816EF9472E566254
+      FA4AF847CEEE96FF53D51371DA5DBF9597F53FDAFDC39F3AFF6656233DD2676E
+      CC7D513F6DCED69BCC65E7AA7E0EE3725C7D5FCB73F39B92FF1C0A8604BF5136
+      24E88D1BCC913C93D16B317FB65595283BC290FC7F01BECDE20E670847A2943D
+      4E08F64C0B66BF0DCFBF079F0FE6EBC0B775E4DD6912ED5E14E6EE7A099FB93B
+      5FC267EE8297F017F0E7DB063E36E8083B435949A96B90381F3FEE703FB4F973
+      EE7D3E9E192F70EE7BDC851F4434F2B11AFBB7EAF28EFF7FD295CFD7B333BB2E
+      DFFFF117E99FAF57E6CFCDEC8DDB0B8E5F8E38C6BBEB098D17F4E33BDCA787C4
+      A017F06588797C5CBB92CFCB48F167104DFCDE78119A78D789A8E9C6DA638ED3
+      FF013CE6EDA6
+    }
+  end
+  object DTQuranHafsNumeric: TZTable
+    Connection = frm_Main.Koneksi
+    TableName = 'v_quran_hafs_numeric'
+    Left = 405
+    Top = 173
+  end
+  object DSQuranHafsNumeric: TDataSource
+    DataSet = DTQuranHafsNumeric
+    Left = 401
+    Top = 109
+  end
+  object DTSumSurat: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 116
+    Top = 570
+  end
+  object DTSumAyat: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 770
+    Top = 477
+  end
+  object DTSumKata: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTSumKataAfterOpen
+    Params = <>
+    Left = 712
+    Top = 550
+  end
+  object DSSumSurat: TDataSource
+    DataSet = DTSumSurat
+    Left = 186
+    Top = 574
+  end
+  object DSSumAyat: TDataSource
+    DataSet = DTSumAyat
+    Left = 831
+    Top = 487
+  end
+  object DSSumKata: TDataSource
+    DataSet = DTSumKata
+    Left = 614
+    Top = 518
+  end
+  object DSSumHuruf: TDataSource
+    DataSet = DTSumHuruf
+    Left = 1153
+    Top = 406
+  end
+  object DTSumHuruf: TZQuery
+    Connection = frm_Main.Koneksi
+    AfterOpen = DTSumKataAfterOpen
+    Params = <>
+    Left = 1117
+    Top = 490
+  end
+  object DTGetSifat: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 477
+    Top = 400
+  end
+  object ExportExcel: TRxDBGridExportSpreadSheet
+    Caption = 'Export Excel'
+    Options = []
+    OpenAfterExport = True
+    DefaultExt = rdeExcel
+    Left = 758
+    Top = 210
+  end
+  object pmSurat: TPopupMenu
+    Left = 182
+    Top = 268
+    object mnEksportSurat: TMenuItem
+      Caption = 'Ke Excel'
+      OnClick = mnEksportSuratClick
+    end
+  end
+  object pmAyat: TPopupMenu
+    Left = 789
+    Top = 242
+    object mnEksportSurat1: TMenuItem
+      Caption = 'Ke Excel'
+      OnClick = mnEksportSurat1Click
+    end
+  end
+  object pmKata: TPopupMenu
+    Left = 1050
+    Top = 187
+    object mnEksportKata: TMenuItem
+      Caption = 'Ke Excel'
+      OnClick = mnEksportKataClick
+    end
+  end
+  object ZQuery2: TZQuery
+    Params = <>
+    Left = 404
+    Top = 282
+  end
+  object DSCariKata: TDataSource
+    DataSet = DTCariKata
+    Left = 263
+    Top = 178
+  end
+  object DTDetilAyat: TZQuery
+    Connection = frm_Main.Koneksi
+    Params = <>
+    Left = 649
+    Top = 193
+  end
+end

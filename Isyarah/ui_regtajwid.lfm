@@ -1,0 +1,715 @@
+object frmRegTajwid: TfrmRegTajwid
+  Left = 356
+  Height = 739
+  Top = 250
+  Width = 1236
+  BorderStyle = bsDialog
+  Caption = 'Register Hukum Tajwid'
+  ClientHeight = 739
+  ClientWidth = 1236
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object grDTajwid: TRxDBGrid
+    Cursor = crHandPoint
+    Left = 6
+    Height = 557
+    Top = 72
+    Width = 1224
+    ColumnDefValues.BlobText = '(blob)'
+    TitleButtons = False
+    AutoSort = True
+    Columns = <    
+      item
+        Alignment = taCenter
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -27
+        Font.Name = 'LPMQ Isep Misbah'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'Huruf'
+        Width = 395
+        FieldName = 'h1'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Empty)'
+        Filter.NotEmptyValue = '(Not empty)'
+        Filter.AllValue = '(All values)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+      end    
+      item
+        Alignment = taCenter
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'Hukum Tajwid'
+        Width = 395
+        FieldName = 'hukum'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Empty)'
+        Filter.NotEmptyValue = '(Not empty)'
+        Filter.AllValue = '(All values)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+        WordWrap = True
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Orientation = toHorizontal
+        Title.Caption = 'Sebab'
+        Width = 397
+        FieldName = 'sebab'
+        EditButtons = <>
+        Filter.DropDownRows = 0
+        Filter.EmptyValue = '(Empty)'
+        Filter.NotEmptyValue = '(Not empty)'
+        Filter.AllValue = '(All values)'
+        Filter.EmptyFont.Style = [fsItalic]
+        Filter.ItemIndex = -1
+        Footers = <>
+        WordWrap = True
+      end>
+    KeyStrokes = <    
+      item
+        Command = rxgcShowFindDlg
+        ShortCut = 16454
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowColumnsDlg
+        ShortCut = 16471
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowFilterDlg
+        ShortCut = 16468
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowSortDlg
+        ShortCut = 16467
+        Enabled = True
+      end    
+      item
+        Command = rxgcShowQuickFilter
+        ShortCut = 16465
+        Enabled = True
+      end    
+      item
+        Command = rxgcHideQuickFilter
+        ShortCut = 16456
+        Enabled = True
+      end    
+      item
+        Command = rxgcSelectAll
+        ShortCut = 16449
+        Enabled = True
+      end    
+      item
+        Command = rxgcDeSelectAll
+        ShortCut = 16429
+        Enabled = True
+      end    
+      item
+        Command = rxgcInvertSelection
+        ShortCut = 16426
+        Enabled = True
+      end    
+      item
+        Command = rxgcOptimizeColumnsWidth
+        ShortCut = 16427
+        Enabled = True
+      end    
+      item
+        Command = rxgcCopyCellValue
+        ShortCut = 16451
+        Enabled = True
+      end>
+    FooterOptions.DrawFullLine = False
+    SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+    SearchOptions.FromStart = False
+    OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter, rdgWordWrap]
+    Align = alBottom
+    AutoFillColumns = True
+    BorderSpacing.Around = 6
+    Color = clWindow
+    DrawFullLine = False
+    FocusColor = clRed
+    SelectedColor = clHighlight
+    DataSource = DSTajwid
+    DefaultRowHeight = 50
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Name = 'HvDTrial Pluto Sans Regular'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    ReadOnly = True
+    Scrollbars = ssVertical
+    TabOrder = 0
+    OnCellClick = grDTajwidCellClick
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 61
+    Top = 635
+    Width = 1236
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 61
+    ClientWidth = 1236
+    TabOrder = 1
+    object DBEdit1: TDBEdit
+      Left = 4
+      Height = 53
+      Top = 4
+      Width = 216
+      DataField = 'h1'
+      DataSource = DSTajwid
+      Align = alLeft
+      BorderSpacing.Around = 4
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'LPMQ Isep Misbah'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      MaxLength = 45
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBComboBox1: TDBComboBox
+      Left = 224
+      Height = 53
+      Top = 4
+      Width = 326
+      Align = alLeft
+      BorderSpacing.Around = 4
+      DataField = 'hukum'
+      DataSource = DSTajwid
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'LPMQ Isep Misbah'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ItemHeight = 45
+      Items.Strings = (
+        'Idzhar Khalqi'
+        'Idzhar Syafawi'
+        'Idgham Bighunnah'
+        'Idgham Bilaghunnah'
+        'Iqlab'
+        'Ikhfa Haqiqi'
+        'Ikhfa Syafawi'
+        'Idgham Mutajanisain'
+        'Idgham Mutaqorribain'
+        'Idgham Mutamatsilain'
+        'Idgham Mimi'
+        'Idgham Syamsiyah'
+        'Idzhar Qomariyah'
+        'Ghunnah Musyaddadah'
+        'Qolqolah Sughro'
+        'Qolqolah Kubro'
+        'Lam Tafkhim'
+        'Lam Tarqiq'
+        'Ra Tafkhim'
+        'Ra Tarqiq'
+        'Mad Tabii'
+        'Mad Wajib Muttashil'
+        'Mad Jaiz Munfashil'
+        'Mad Lazim Mutsaqqol Kilmi'
+        'Mad Lazim Mukhoffaf Kilmi'
+        'Mad Layyin'
+        'Mad Aridlissukun'
+        'Mad Shilah Qoshirah'
+        'Mad Shilah Thowilah'
+        'Mad Iwad'
+        'Mad Badal'
+        'Mad Lazim Kharfi Mukhoffaf'
+        'Mad Lazim Harfi Mutsaqqol'
+        'Mad Tamkin'
+        'Mad Farq'
+        'Waqof Lazim'
+        'Waqof Mutlaq'
+        'Waqof Laa Washal'
+        'Waqaf Shad'
+        'Waqaf Shad-Lam-Ya'
+        'Waqaf Qof'
+        'Waqaf Khatalik'
+        ''
+      )
+      MaxLength = 0
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object DBComboBox2: TDBComboBox
+      Left = 554
+      Height = 53
+      Top = 4
+      Width = 678
+      Align = alClient
+      BorderSpacing.Around = 4
+      DataField = 'sebab'
+      DataSource = DSTajwid
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'LPMQ Isep Misbah'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ItemHeight = 45
+      Items.Strings = (
+        '----------- Izhar Khalqi ---------------------'
+        'Nun Sukun ( نْ ) / Tanwin  Bertemu dengan Huruf ha ( ح)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf kha ( خ)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf ''ain ( ع)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf ghain ( غ)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Ha (ه)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf hamzah ( ء)'
+        '----------- Idgham Bighunnah ---------------------'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Ya (ي)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Waw (و)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Mim ( م)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Nun ( ن)'
+        '----------- Idgham Bilaghunnah ---------------------'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Lam (ل)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Ra ( ر)'
+        '----------- Ikhfa Hakiki ---------------------'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Kaf (ك)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Qof (ق)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Fa (ف)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Dha (ظ)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Tha (ط)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Dhod (ض)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Shod (ص)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Syin (ش)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Zay (ز)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Dzal (ذ)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Dal ( د)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Jim (ج)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Tsa (ث)'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Ta  (ت)'
+        '----------- Iqlab---------------------'
+        'Nun Sukun ( نْ ) / Tanwin Bertemu dengan Huruf Ba ( ب)'
+        '----------- Ikhfa Syafawi ---------------------'
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf Ba (ب)'
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf Mim (م)'
+        '----------- Izhar Syafawi---------------------'
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf alif ( ا ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ta ( ت )'
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf tsa ( ث ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf jim ( ج ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ha (ح) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf kho ( خ ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf dal ( د ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf dzal ( ذ ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ro ( ر ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf za ( ز ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf sin ( س ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf syin ( ش ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf shod ( ص ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf dhod ( ض ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf tho ( ط ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf zho ( ظ ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ain ( ع )'
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ghoin ( غ ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf fa ( ف ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf qof ( ق ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf kaf ( ك ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf lam ( ل ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf nun ( ن ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ha ( هـ ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf wa ( و ) '
+        'Mim Sukun ( مْ )  Bertemu dengan Huruf ya ( ي )'
+        '----------- Mad Thabii ---------------------'
+        'Huruf berharakat fathah diikuti Huruf alif ( ا )'
+        'Huruf berharakat kasrah diikuti Huruf ya ( ي )'
+        'Huruf berharakat Dhammah diikuti Huruf wa ( و )'
+        '----------- Idgam Syamsiyah ---------------------'
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ن (nun) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ل (lam) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ظ (dho) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ط (tha)'
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ض (dhad) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ص (shad) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ش (syin) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah س (sin)'
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ز (zai) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ر (ro’) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ذ (dzal) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah د (dal) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Syamsiyah ث (tsa)'
+        '----------- Idzhar Qomariyah ---------------------'
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah alif (ا ) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah ba'' (ب) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah jim (ج) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah ha (ح) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah kha (خ) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah ''Ain (ع) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Ghain (غ) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Fa (ف) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Qaf (ق) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Kaf (ك) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Mim (م) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Wawu (و) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Ha (ه) '
+        'Huruf Alif Lam ( ال ) Bertemu Huruf Qomariyah Ya ( ي )'
+        '----------- Mad Iwad  ---------------------'
+        'Fathah Tanwin pada huruf akhir kata yang diwaqafkan (dihentikan)'
+        '----------- Izhar Wajib/Jaiz ---------------------'
+        'Mad thabi''i yang bertemu dengan hamzah (ء) dalam satu kata'
+        'Mad thabi''i yang bertemu dengan hamzah (ء) dalam kata yang berbeda'
+        '----------- Lam Tafkhim/Tarqiq ---------------------'
+        'Lafdzul Jalalah didahului huruf dengan Harokat Fathah'
+        'Lafdzul Jalalah didahului huruf dengan Harokat Dhammah'
+        'Lafdzul Jalalah didahului huruf dengan Harokat Kasrah'
+        '----------- Ra Tafkhim/Tarqiq ---------------------'
+        'Ra Berharokat Fathah didahului Fathah / Dhammah'
+        'Ra Berharokat Fathatain didahului Fathah  / Dhammah'
+        'Ra Berharokat Dhammah didahului Fathah  / Dhammah'
+        'Ra Berharokat Dhammatain didahului Fathah  / Dhammah'
+        'Ra Berharokat Kasrah didahului Kasrah'
+        'Ra Berharokat Kasrah didahului Kasrahtain'
+        '-----------Qolqolah Sughro-------------'
+        'ق Sukun/Mati'
+        'ط Sukum/Mati'
+        'ج Sukun/Mati'
+        'د Sukun/Mati'
+        'بْ Sukum/Mati'
+        '-----------Qolqolah Kubro------------'
+        'ق Bertasydid / Harokat Diwaqofkan'
+        'ط Bertasydid / Harokat Diwaqofkan'
+        'ج Bertasydid / Harokat Diwaqofkan'
+        'د Bertasydid / Harokat Diwaqofkan'
+        'بْ Bertasydid / Harokat Diwaqofkan'
+      )
+      MaxLength = 0
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 43
+    Top = 696
+    Width = 1236
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 43
+    ClientWidth = 1236
+    TabOrder = 2
+    object spnSave: TSpeedButton
+      Cursor = crHandPoint
+      Left = 900
+      Height = 35
+      Top = 4
+      Width = 224
+      Align = alRight
+      BorderSpacing.Around = 4
+      Caption = 'Simpan'
+      Flat = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        200000000000000900006400000064000000000000000000000000000000CC99
+        3305CC821C37CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE80
+        1E44CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE80
+        1E44CE801E44CE801E44CE801E44CC821C37CC99330500000000CC993305D388
+        2BD0E39E52EBD18524E8CE811E77CE811E77CE811E77CE811E77CE811E77CE81
+        1E77CE811E77CE811E77CE811E77CE811E77CE811E77CE811E77CE811E77CE81
+        1E77CE811E77CE811E77D18524E8E2A051EBD3892BCFCC993305D0801C36E29F
+        50ECFFC99BFFD38A2CD700000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000D38A2CD7FFC99BFFE29F50ECCF821D35CF802040E4A3
+        59EFFFC99BFFD38A2CD700000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD70000000000000000CF801EA9CE821EBBCE821EBBCE82
+        1EBBCE821EBBCE821EBBCE821EBBCE821EBBCE821EBBCE821EBBCE821EBBCF80
+        1EA90000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD700000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD70000000000000000CF811F8ECF801E99CF801E99CF80
+        1E99CF801E99CF801E99CF801E99CF801E99CF801E99CF801E99CF801E99CF81
+        1F8E0000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD70000000000000000CE801D1ACB801E22CB801E22CB80
+        1E22CB801E22CB801E22CB801E22CB801E22CB801E22CB801E22CB801E22CE80
+        1D1A0000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD70000000000000000CE811D59CD821E66CD821E66CD82
+        1E66CD821E66CD821E66CD821E66CD821E66CD821E66CD821E66CD821E66CE81
+        1D590000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD70000000000000000CE811D59CD821E66CD821E66CD82
+        1E66CD821E66CD821E66CD821E66CD821E66CD821E66CD821E66CD821E66CE81
+        1D590000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD38A2CD700000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000D38A2CD7FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFD68B31E5CE84211F000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000CF802020D68D32E4FFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFF6BD85FEDB943FE7D78E35E4D78E35E4D78E35E4D78E35E4D78E
+        35E4D78E35E4D78E35E4D78E35E4D78E35E4D78E35E4D78E35E4D78E35E4D78E
+        35E4D78E35E4DB943FE7F7BC85FEFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC9
+        9BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC9
+        9BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC9
+        9BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFFFC9
+        9BFFFFC99BFFFFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFF5B980FDDF994AE7DF9848E4DF9848E4DF98
+        48E4DF9848E4DF9848E4DF9848E4DF9848E4DF9848E4DF9848E4DF9848E4DF99
+        4AE7F5BA81FDFFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFD79038E8D0821E2BCB801E22CB801E22CB80
+        1E22CB801E22CB801E22CB801E22CB801E22CB821F31CA821C3FCE821C3FD282
+        1C2DD99038E8FFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFD68D33E70000000000000000000000000000
+        000000000000000000000000000000000000D3882ACFDF9848E6D58A2FEECC80
+        1E3CD68D33E7FFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFD68D33E70000000000000000000000000000
+        000000000000000000000000000000000000D38A2CD7FFC99BFFE4A358F0CF80
+        2040D68D33E7FFC99BFFFFC99BFFFFC99BFFE4A359EFCF802040CF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFD68D33E70000000000000000000000000000
+        000000000000000000000000000000000000D38A2CD7FFC99BFFE4A358F0CF80
+        2040D68D33E7FFC99BFFFFC99BFFFFC99BFFE3A053EFCE821C3FCF802040E4A3
+        59EFFFC99BFFFFC99BFFFFC99BFFD68D33E70000000000000000000000000000
+        000000000000000000000000000000000000D38A2CD7FFC99BFFE4A358F0CF80
+        2040D68D33E7FFC99BFFFFC99BFFF0B274FBD3892CCDC68E1C09D0801C36E29E
+        51ECFFC99BFFFFC99BFFFFC99BFFD68D33E70000000000000000000000000000
+        000000000000000000000000000000000000D48B2E95D48A2CD5D38A2CD1D080
+        1B26D68D33E7FFC99BFFF0B274F9D3892BCBCC801A0A00000000CC993305D389
+        2BD1E29D50EDE3A054EFE3A054EFD28626F1CE811E88CE811E88CE811E88CE81
+        1E88CE811E88CE811E88CE811E88CE811E88CE811E88CE811E88CE811E88CE81
+        1E88D28626F1E19E50EFD3892BCBCC801A0A000000000000000000000000D580
+        2B06CC821C37CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE80
+        1E44CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE801E44CE80
+        1E44CE801E44CE811E43C68E1C09000000000000000000000000
+      }
+      OnClick = spnSaveClick
+      ParentFont = False
+    end
+    object spnDelete: TSpeedButton
+      Cursor = crHandPoint
+      Left = 1128
+      Height = 35
+      Top = 4
+      Width = 104
+      Align = alRight
+      BorderSpacing.Around = 4
+      Caption = 'Hapus'
+      Flat = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000000000
+        000000000000000000000000000000000000000000003942F61B3544F3693644
+        F4B53643F4D63643F5F33643F5F33643F4D63643F4B43544F3693942F61B0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000003340F2143743F4913643F4FB3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FB3543
+        F3993347F5190000000000000000000000000000000000000000000000000000
+        000000000000000000003643F54C3643F4F13643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4F03644F54B00000000000000000000000000000000000000000000
+        0000000000003642F36C3643F4FD3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FD3743F36B000000000000000000000000000000000000
+        00003543F4483643F4FC3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FD3643F54C0000000000000000000000003B45
+        F51A3643F4F23643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4F03540F41800000000000000003742
+        F39A3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3644F397000000003740F61C3643
+        F4FB3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF6F79F6FFB0B5F8FF4753
+        F5FF3643F4FF3643F4FF3643F4FF3643F4FF4753F5FFB1B6F8FF6F78F6FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FB3942F61B3743F36B3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FFB2B7F8FFFAFAFAFFD8DB
+        F9FF4753F5FF3643F4FF3643F4FF4753F5FFD8DBF9FFFAFAFAFFB1B6F8FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3642F5683743F4B63643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4752F5FFD8DAF9FFFAFA
+        FAFFDBDEF9FF4955F5FF4752F5FFD8DAF9FFFAFAFAFFDBDEF9FF4A55F5FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4B43643F4D93643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4753F5FFD8DB
+        F9FFFAFAFAFFD8DBF9FFD8DBF9FFFAFAFAFFD8DBF9FF4753F5FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4D63643F4F23643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4752
+        F5FFD8DAF9FFFAFAFAFFFAFAFAFFDBDEF9FF4A55F5FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4F13643F5F33643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4752
+        F5FFD8DAF9FFFAFAFAFFFAFAFAFFDBDEF9FF4955F5FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F5F33643F4DA3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4753F5FFD8DB
+        F9FFFAFAFAFFD8DBF9FFD8DBF9FFFAFAFAFFD8DBF9FF4753F5FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4D83743F4B63643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF4752F5FFD8DAF9FFFAFA
+        FAFFDBDEF9FF4A55F5FF4752F5FFD8DAF9FFFAFAFAFFDBDEF9FF4955F5FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4B43644F36D3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FFB1B6F8FFFAFAFAFFD8DB
+        F9FF4753F5FF3643F4FF3643F4FF4753F5FFD8DBF9FFFAFAFAFFB0B5F8FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3543F36A3546F61D3643
+        F4FC3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF6F79F6FFB1B6F8FF4753
+        F5FF3643F4FF3643F4FF3643F4FF3643F4FF4753F5FFB1B6F8FF6F79F6FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FB3942F61B000000003643
+        F49C3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3543F39900000000000000003942
+        F61B3643F4F23643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4F13347F51900000000000000000000
+        00003442F5493643F4FC3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FD3841F54E0000000000000000000000000000
+        0000000000003644F36D3643F4FD3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FD3642F36C000000000000000000000000000000000000
+        000000000000000000003841F54E3643F4F23643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643
+        F4FF3643F4F23542F54D00000000000000000000000000000000000000000000
+        00000000000000000000000000003942F61B3543F3993643F4FB3643F4FF3643
+        F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FF3643F4FD3644
+        F5AA3A42F71F0000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000003546F61D3642F36C3643
+        F4B73742F4D73643F4F43643F4F43742F4D73743F4B63743F36B3740F61C0000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = spnDeleteClick
+      ParentFont = False
+    end
+    object spb_Filter: TSpeedButton
+      Left = 5
+      Height = 33
+      Top = 5
+      Width = 131
+      Align = alLeft
+      BorderSpacing.Around = 5
+      Caption = 'Reset Filter'
+      Flat = True
+      Font.Name = 'HvDTrial Pluto Sans Regular'
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000AA55
+        0003000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000B247
+        004FB34D000A0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000B94D
+        0628B14601ABFF00000100000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000B74B04D5B146007500000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000BD520880B74C04FDB045004A000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000C4590C2BBD5207FFB74C04EEB34500250000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000C3590AD5BD5207FFB74C04D7AA44000F00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000E177174DDB6F1555D569
+        1255CF630F55C95E0BB3C35809FFBD5207FFB74B04B080800002000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000E87D1B85E27617FFDC70
+        14FFD66A12FFD0640FFFC95E0CFFC35809FFBD5207FFB74C0480000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000EA80150CE87C1AE6E276
+        17FFDC7014FFD66A12FFD0640FFFC95E0CFFC35809FFBD5207FEB84D03560000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000EF821D60E87C
+        1AFFE27617FFDC7014FFD66A12FFCF640F85C95D0C55C3570955BD5007490000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000FF800002ED81
+        1DCBE87C1AFFE27617FFDC7014FFD56912C4FF00000100000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000000000F288
+        1F3AEE821DFEE87C1AFFE27617FFDC7014FFD76C125300000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000F58920AAEE821DFFE87C1AFFE27617FFDD7114DEDF602008000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000F78B1F21F4881FF7EE821DFFE87C1AFFE27617FFDD6F1377000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000F98D2286F4881FFFEE821DFFE87C1AFFE17617F2E07014190000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000FF952B0CF98D22E6F4881FFFEE821DFFE87C1AFFE176179A0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000FF94211FFA8C2333F5871E33F0821E33EA7D1A310000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = spb_FilterClick
+      ParentFont = False
+    end
+  end
+  object edtCariHuruf: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 532
+    Height = 53
+    Top = 8
+    Width = 172
+    Alignment = taCenter
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'LPMQ Isep Misbah'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = edtCariHurufChange
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DSTajwid: TDataSource
+    DataSet = DTTajwid
+    Left = 440
+    Top = 200
+  end
+  object DTTajwid: TZQuery
+    Connection = frm_Main.KOneksi_Tajwid
+    SQL.Strings = (
+      'select * from stajwid'
+    )
+    Params = <>
+    Left = 512
+    Top = 183
+  end
+end
