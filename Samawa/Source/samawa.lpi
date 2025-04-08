@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Samawa7"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+        <TextName Value="SamaWA"/>
+        <TextDesc Value="Sapa Melalui WhatsApp"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="31">
+      <Item1>
+        <PackageName Value="JvPageCompsR"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="uEControls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="pl_Graphics32"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="atflatcontrols_package"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="laz_fpspreadsheet_visual"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="laz_fpspreadsheet"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="KControlsLaz"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="JvMMLazR"/>
+      </Item8>
+      <Item9>
+        <PackageName Value="rxdbgrid_export_spreadsheet"/>
+      </Item9>
+      <Item10>
+        <PackageName Value="BGRAControlsFX"/>
+      </Item10>
+      <Item11>
+        <PackageName Value="CEF4Delphi_Lazarus"/>
+      </Item11>
+      <Item12>
+        <PackageName Value="jvctrlslazr"/>
+      </Item12>
+      <Item13>
+        <PackageName Value="turbopoweripro"/>
+      </Item13>
+      <Item14>
+        <PackageName Value="datetimectrls"/>
+      </Item14>
+      <Item15>
+        <PackageName Value="laz_visualplanit"/>
+      </Item15>
+      <Item16>
+        <PackageName Value="pl_Cindy"/>
+      </Item16>
+      <Item17>
+        <PackageName Value="runtimetypeinfocontrols"/>
+      </Item17>
+      <Item18>
+        <PackageName Value="pl_ExControls"/>
+      </Item18>
+      <Item19>
+        <PackageName Value="sdflaz"/>
+      </Item19>
+      <Item20>
+        <PackageName Value="bgracontrols"/>
+      </Item20>
+      <Item21>
+        <PackageName Value="frameviewer09"/>
+      </Item21>
+      <Item22>
+        <PackageName Value="lazbarcodes"/>
+      </Item22>
+      <Item23>
+        <PackageName Value="lazreport"/>
+      </Item23>
+      <Item24>
+        <PackageName Value="industrial"/>
+      </Item24>
+      <Item25>
+        <PackageName Value="indylaz"/>
+      </Item25>
+      <Item26>
+        <PackageName Value="rxnew"/>
+      </Item26>
+      <Item27>
+        <PackageName Value="FCL"/>
+      </Item27>
+      <Item28>
+        <PackageName Value="dbflaz"/>
+      </Item28>
+      <Item29>
+        <PackageName Value="zcomponent"/>
+      </Item29>
+      <Item30>
+        <PackageName Value="SynEdit"/>
+      </Item30>
+      <Item31>
+        <PackageName Value="LCL"/>
+      </Item31>
+    </RequiredPackages>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="samawa.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="usplash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSplash"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uphonebook.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fphonebook"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fview"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="upicture.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fpicture"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uregistration.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fregistration"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="utemplate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Ftemplate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="ubugfix.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBugFix"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="upesan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPesan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uimpor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FImpor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uImpor"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="usettingproxy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fsettingproxy"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uvcfmaker.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fvcfmaker"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="uqmessage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FQMessage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="uinformasi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FInformasi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uInformasi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="ukozinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Fkozinfo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="usapa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSapa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSapa"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="uscript.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmScriptWA"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="ucetak.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCetak"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="uschedule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSchedule"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="usendlog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSendLog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="ugoodbye.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGoodBy"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="ujamu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmJamu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="umessage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMessage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="ugetxy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGetXY"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ugetXY"/>
+      </Unit25>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="samawa"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <TargetCPU Value="i386"/>
+      <TargetOS Value="win32"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
