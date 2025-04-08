@@ -1,0 +1,40 @@
+object frmMessage: TfrmMessage
+  Left = 387
+  Height = 553
+  Top = 250
+  Width = 862
+  BorderStyle = bsDialog
+  Caption = 'Pengumunan'
+  ClientHeight = 553
+  ClientWidth = 862
+  Color = 15266276
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 89
+    Height = 416
+    Top = 56
+    Width = 684
+    AutoSize = False
+    BorderSpacing.Left = 20
+    Caption = 'Pengguna Samawa Yang Kami Hormati :'#13#10#13#10'Terkait Pengunaan Samawa , Beberapa Hal yang perlu diperhatikan adalah :'#13#10#13#10'1. Gunakan Nomor Lama atau Nomor WA Bussiness Untuk Kelancaran'#13#10'2. Hindari Mengirim Message perhari melebihi 300 '#13#10'3. Kendala paling sering muncul adalah Gagal Send, '#13#10'    Ini terjadi karena ada perubahan pada Halaman web WA yang perlu '#13#10'    kami telusuri dan sesuaikan'#13#10'4. Gunakan Menu Jamu jika terjadi error Send, Apabila masih error berarti '#13#10'    masih dalam perbaikan'#13#10'5. Aplikasi Samawa hanya mengotomasi pengiriman, tidak menggunakan '#13#10'    layanan sendiri secara terpusat dalam pengiriman pesan WA'#13#10'6. Terjadinya blokir nomor WA adalah tanggung jawab masing-masing'#13#10'    Pengguna'#13#10'7. Ikuti Tutorial Penggunanan '#13#10'8. Biasanya ada Kelambatan pada 3 pesan pertama per-aplikasi aktif , '#13#10'   ditunggu saja dengan sabar.'#13#10'9. Hindari Mengunakan "+" dan "&&" pada Isi Pesan agar Pesan tidak terpotong'
+    Font.Height = -18
+    Font.Name = 'Arial'
+    Font.Quality = fqCleartypeNatural
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object SpeedButton1: TSpeedButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Left = 365
+    Height = 39
+    Top = 488
+    Width = 133
+    Caption = 'OK'
+    OnClick = SpeedButton1Click
+  end
+end

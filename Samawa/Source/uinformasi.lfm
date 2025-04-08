@@ -1,0 +1,41 @@
+object FInformasi: TFInformasi
+  Left = 429
+  Height = 377
+  Top = 250
+  Width = 656
+  AlphaBlend = True
+  AlphaBlendValue = 245
+  BorderIcons = [biSystemMenu]
+  Caption = 'Informasi dari KangOz'
+  ClientHeight = 377
+  ClientWidth = 656
+  Color = 5142578
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -12
+  Font.Name = 'Century Gothic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poMainFormCenter
+  object mInformasi: TMemo
+    Left = 11
+    Height = 355
+    Top = 11
+    Width = 634
+    Align = alClient
+    BorderSpacing.Around = 11
+    BorderStyle = bsNone
+    Color = 5142578
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+    WordWrap = False
+  end
+end

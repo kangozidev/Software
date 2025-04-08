@@ -1,0 +1,9 @@
+object frmGetXY: TfrmGetXY
+  Left = 387
+  Height = 669
+  Top = 250
+  Width = 955
+  Caption = 'Get Mouse XY'
+  DesignTimePPI = 120
+  OnClick = FormClick
+end

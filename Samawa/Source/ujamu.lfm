@@ -1,0 +1,65 @@
+object frmJamu: TfrmJamu
+  Left = 352
+  Height = 107
+  Top = 250
+  Width = 686
+  BorderStyle = bsNone
+  Caption = 'frmJamu'
+  ClientHeight = 107
+  ClientWidth = 686
+  Color = 6207978
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Panel1: TPanel
+    Left = 6
+    Height = 95
+    Top = 6
+    Width = 674
+    Align = alClient
+    BorderSpacing.Around = 6
+    BevelOuter = bvNone
+    ClientHeight = 95
+    ClientWidth = 674
+    Color = 2170644
+    ParentColor = False
+    TabOrder = 0
+    object Label1: TLabel
+      AnchorSideLeft.Control = Owner
+      AnchorSideLeft.Side = asrCenter
+      Left = 235
+      Height = 23
+      Top = 8
+      Width = 216
+      Alignment = taCenter
+      Caption = 'Progress Update Scripting '
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -17
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object pbarjamu: TFXProgressBar
+      AnchorSideLeft.Control = Owner
+      AnchorSideLeft.Side = asrCenter
+      Left = 8
+      Height = 25
+      Top = 48
+      Width = 654
+      Anchors = [akTop]
+      MinValue = 1
+      MaxValue = 100
+      Value = 1
+      Color = 14852966
+    end
+  end
+  object Timer1: TTimer
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 111
+    Top = 15
+  end
+end
