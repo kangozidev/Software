@@ -6,7 +6,7 @@ Source Code ditulis dalam bahasa Pascal menggunakan Lazarus FPC
 
 Download di https://drive.google.com/uc?export=download&id=1s2FIN-wBWl_ZwWlQiRHubc7RjW-5VXTM
 
-File dipassword : Hubungi Kami
+Untuk Password Hubungi Kami : kangozicorner@gmail.com
 
 
 
