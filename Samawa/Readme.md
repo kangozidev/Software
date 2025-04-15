@@ -2,7 +2,8 @@
 
 Source Code ditulis dalam bahasa Pascal menggunakan Lazarus FPC
 
-![image](https://github.com/user-attachments/assets/09f510ac-4878-4a9f-b9c1-01fd7e450dc5)
+![image](https://github.com/user-attachments/assets/63ad3d41-967d-458a-a416-2f50f651199f)
+
 
 
 
