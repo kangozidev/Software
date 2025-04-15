@@ -1,6 +1,7 @@
 # Axinemo
 Penerjemah dengan Gemini AI
 
-![image](https://github.com/user-attachments/assets/22490b48-8a06-4320-9fa0-c6be2a717469)
+![image](https://github.com/user-attachments/assets/492d14e0-d33c-4f69-a456-dfc8173e3e60)
+
 
 
