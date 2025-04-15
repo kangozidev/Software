@@ -1,2 +1,2 @@
 ## Software 
-Ini adalah Software yang kami develop menggunakan Lazarus FPC
+Ini adalah Daftar Software yang kami develop menggunakan Lazarus FPC
